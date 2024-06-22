@@ -2,6 +2,6 @@
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "028C"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "div": 255, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
-  ]},
+  ]}
 ]
 }
