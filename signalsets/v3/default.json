@@ -1,7 +1,15 @@
 { "commands": [
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1164"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_SOC_DISP", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "HV battery charge (displayed)", "suggestedMetric": "stateOfCharge"}
+  ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "028C"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
-  ]}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "22E4"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_KWH", "path": "Battery", "fmt": { "len": 16, "max": 3276.75, "div": 10, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
+  ]},
 ]
 }
