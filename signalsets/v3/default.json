@@ -9,7 +9,7 @@
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E3B"}, "freq": 1,
   "signals": [
-    {"id": "EGOLF_HVBAT_VOLTS", "path": "Battery", "fmt": { "len": 16, "max": 1000, "div": 4, "add": -511, "unit": "volts" }, "name": "HV battery voltage"}
+    {"id": "EGOLF_HVBAT_VOLTS", "path": "Battery", "fmt": { "len": 16, "max": 1000, "div": 4, "unit": "volts" }, "name": "HV battery voltage"}
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E3D"}, "freq": 1,
   "signals": [
