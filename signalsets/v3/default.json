@@ -15,6 +15,10 @@
   "signals": [
     {"id": "EGOLF_HVBAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
   ]},
+{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "02BD"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E32"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_TOT_AH_CHRG",   "path": "Battery", "fmt": {           "len": 32, "max": 7818700,                  "div": 549.31642,                "unit": "ampereHours"   }, "name": "HV battery total ampere hours of charge"},
