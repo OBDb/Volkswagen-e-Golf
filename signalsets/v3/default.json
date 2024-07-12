@@ -1,4 +1,8 @@
 { "commands": [
+{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB2"}, "freq": 86400,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CAP", "path": "Battery", "fmt": { "len": 32, "max": 3276, "div": 1310770, "unit": "kilowattHours" }, "name": "HV battery capacity", "description": "Total possible energy in the high voltage battery"}
+  ]},
 { "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB8"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_KWH", "path": "Battery", "fmt": { "len": 32, "max": 3276, "div": 1310770, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
