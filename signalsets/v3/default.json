@@ -1,40 +1,40 @@
 { "commands": [
-{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB2"}, "freq": 86400,
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2AB2"}, "freq": 86400,
   "signals": [
     {"id": "EGOLF_HVBAT_CAP", "path": "Battery", "fmt": { "len": 32, "max": 3276, "div": 1310770, "unit": "kilowattHours" }, "name": "HV battery capacity", "description": "Total possible energy in the high voltage battery"}
   ]},
-{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB8"}, "freq": 1,
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2AB8"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_KWH", "path": "Battery", "fmt": { "len": 32, "max": 3276, "div": 1310770, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
   ]},
-{ "hdr": "714", "rax": "77E", "cmd": {"22": "2203"}, "freq": 10,
+{ "hdr": "714", "rax": "77E", "dbg": true, "cmd": {"22": "2203"}, "freq": 10,
   "signals": [
     {"id": "EGOLF_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "714", "rax": "77E", "cmd": {"22": "22E0"}, "freq": 1,
+{ "hdr": "714", "rax": "77E", "dbg": true, "cmd": {"22": "22E0"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_RANGE_DSP", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Range remaining (displayed)", "suggestedMetric": "electricRange"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1164"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1164"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_SOC_DISP", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "HV battery charge (displayed)", "suggestedMetric": "stateOfCharge"}
   ]},
-{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "028C"}, "freq": 1,
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "028C"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
   ]},
-{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E32"}, "freq": 1,
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E32"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_TOT_AH_CHRG",   "path": "Battery", "fmt": {           "len": 32, "max": 7818700,                  "div": 549.31642,                "unit": "ampereHours"   }, "name": "HV battery total ampere hours of charge"},
     {"id": "EGOLF_HVBAT_TOT_AH_DCHRG",  "path": "Battery", "fmt": {"bix": 32, "len": 32, "max": 3909350, "min": -3909350, "div": 549.31642,  "sign": true, "unit": "ampereHours"   }, "name": "HV battery total ampere hours of discharge"},
     {"id": "EGOLF_HVBAT_TOT_KWH_CHRG",  "path": "Battery", "fmt": {"bix": 64, "len": 32, "max": 500300,                   "div": 8583.07212,               "unit": "kilowattHours" }, "name": "HV battery total kilowatt hours of charge"},
     {"id": "EGOLF_HVBAT_TOT_KWH_DCHRG", "path": "Battery", "fmt": {"bix": 96, "len": 32, "max": 250300,  "min": -250300,  "div": 8583.07212, "sign": true, "unit": "kilowattHours" }, "name": "HV battery total kilowatt hours of discharge"}
   ]},
-{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E3B"}, "freq": 1,
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E3B"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_VOLTS", "path": "Battery", "fmt": { "len": 16, "max": 1000, "div": 4, "unit": "volts" }, "name": "HV battery voltage"}
   ]},
-{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E3D"}, "freq": 1,
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E3D"}, "freq": 1,
   "signals": [
     {"id": "EGOLF_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 200, "min": -200, "div": 4, "add": -511, "unit": "amps" }, "name": "HV battery current"}
   ]}
