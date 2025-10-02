@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.221E3B
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_VOLTS: 343
+  response: 7ED05621E3B055C
+- expected_values:
+    EGOLF_HVBAT_VOLTS: 360.5
+  response: 7ED05621E3B05A2
