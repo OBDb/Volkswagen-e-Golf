@@ -14,7 +14,7 @@ test_cases:
     EGOLF_HVBAT_KWH: 0.00059
   response: |-
     77A100B622AB8000003
-    77A210800000003AAAA
+    77A210000000003AAAA
 - expected_values:
     EGOLF_HVBAT_KWH: 0.00078
   response: |-
