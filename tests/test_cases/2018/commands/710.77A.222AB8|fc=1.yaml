@@ -20,3 +20,13 @@ test_cases:
   response: |-
     77A100B622AB8000002
     77A21D000000003AAAA
+- expected_values:
+    EGOLF_HVBAT_KWH: 0.00061
+  response: |-
+    77A100B622AB8000003
+    77A211C00000003AAAA
+- expected_values:
+    EGOLF_HVBAT_KWH: 0.00061
+  response: |-
+    77A100B622AB8000003
+    77A212000000003AAAA
