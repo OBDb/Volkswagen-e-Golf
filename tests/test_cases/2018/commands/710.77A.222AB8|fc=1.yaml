@@ -1,0 +1,12 @@
+command_id: 710.77A.222AB8|fc=1
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_KWH: 0.00055
+  response: |-
+    77A100B622AB8000002
+    77A21CC00000003AAAA
+- expected_values:
+    EGOLF_HVBAT_KWH: 0.00055
+  response: |-
+    77A100B622AB8000002
+    77A21D000000003AAAA
