@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     EGOLF_ODO: 57268
   response: 77E0662220300DFB4
+- expected_values:
+    EGOLF_ODO: 57283
+  response: 77E0662220300DFC3
