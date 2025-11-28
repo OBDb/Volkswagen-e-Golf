@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.221164
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_SOC_DISP: 62.04
+  response: 7E805621164183C
