@@ -7,4 +7,9 @@ test_cases:
     ECT: 215
   response: |-
     7E8034105FF
+    7E804410CFFFE
+- expected_values:
+    ECT: 215
+  response: |-
+    7E8034105FF
     7E8064140E4C08000
