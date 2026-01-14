@@ -4,5 +4,5 @@ test_cases:
     EGOLF_HVBAT_SOC: 40.78431
   response: 7ED0462028C68
 - expected_values:
-    EGOLF_HVBAT_SOC: 91.37255
-  response: 7ED0462028CE9
+    EGOLF_HVBAT_SOC: 91.76471
+  response: 7ED0462028CEA
