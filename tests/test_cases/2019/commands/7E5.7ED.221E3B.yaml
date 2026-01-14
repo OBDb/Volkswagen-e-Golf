@@ -4,5 +4,5 @@ test_cases:
     EGOLF_HVBAT_VOLTS: 329.75
   response: 7ED05621E3B0527
 - expected_values:
-    EGOLF_HVBAT_VOLTS: 360.5
-  response: 7ED05621E3B05A2
+    EGOLF_HVBAT_VOLTS: 361
+  response: 7ED05621E3B05A4
