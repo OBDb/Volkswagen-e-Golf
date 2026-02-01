@@ -4,6 +4,9 @@ test_cases:
     EGOLF_HVBAT_SOC_DISP: 10.87
   response: 7E805621164043F
 - expected_values:
+    EGOLF_HVBAT_SOC_DISP: 20.47
+  response: 7E80562116407FF
+- expected_values:
     EGOLF_HVBAT_SOC_DISP: 23.04
   response: '7E8056211640900'
 - expected_values:
@@ -11,9 +14,6 @@ test_cases:
   response: |-
     7E8056211640A32
     7E804410CFFFE
-- expected_values:
-    EGOLF_HVBAT_SOC_DISP: 28.15
-  response: 7E8056211640AFF
 - expected_values:
     EGOLF_HVBAT_SOC_DISP: 84.7
   response: |-
