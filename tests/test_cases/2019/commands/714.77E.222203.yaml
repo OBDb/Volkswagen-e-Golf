@@ -10,5 +10,5 @@ test_cases:
     EGOLF_ODO: 65792
   response: '77E06622203010100'
 - expected_values:
-    EGOLF_ODO: 76544
-  response: 77E06622203012B00
+    EGOLF_ODO: 76800
+  response: 77E06622203012C00
