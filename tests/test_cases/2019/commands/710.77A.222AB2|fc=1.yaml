@@ -1,6 +1,9 @@
 command_id: 710.77A.222AB2|fc=1
 test_cases:
 - expected_values:
+    EGOLF_HVBAT_CAP: 576.07881
+  response: 77A07622AB22D020400
+- expected_values:
     EGOLF_HVBAT_CAP: 665.67539
   response: 77A07622AB234020400
 - expected_values:
