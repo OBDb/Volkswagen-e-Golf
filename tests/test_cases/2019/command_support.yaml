@@ -97,3 +97,5 @@ supported_commands_by_ecu:
 unsupported_commands_by_ecu:
   "714":
   - 714.77E.2222E0:EGOLF_RANGE_DSP
+  "7DF":
+  - 7DF.0111
