@@ -1,42 +1,1159 @@
 { "commands": [
+{ "hdr": "70E", "rax": "778", "fcm1": true, "dbg": true, "cmd": {"22": "1945"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_HEATER_FOR_NOZZLES_ACTIVE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Heater for nozzles active"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2A07"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_BAT_V_2A07", "path": "Battery", "fmt": { "len": 16, "max": 69.535, "min": 4, "div": 1000, "add": 4, "unit": "volts" }, "name": "Battery voltage"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2A09"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_BAT_I", "path": "Battery", "fmt": { "len": 32, "max": 1000, "min": -1000, "div": 1000, "sign": true, "unit": "amps" }, "name": "Battery current"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2A0B"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_BAT_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Battery temperature"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2A0C"}, "freq": 10,
+  "signals": [
+    {"id": "EGOLF_BAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "unit": "percent" }, "name": "Battery charge level"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2A0E"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_BAT_INT_R", "path": "Battery", "fmt": { "len": 8, "max": 51, "mul": 20, "div": 100, "unit": "unknown" }, "name": "Battery internal resistance"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2A0F"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_USE_BAT_CHG", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "ampereHours" }, "name": "Usable battery charge"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "dbg": true, "cmd": {"22": "2A10"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_BAT_V_AT_REST", "path": "Battery", "fmt": { "len": 8, "max": 34.5, "min": 9, "div": 10, "add": 9, "unit": "volts" }, "name": "Battery voltage at rest"}
+  ]},
 { "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB2"}, "freq": 86400, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
     {"id": "EGOLF_HVBAT_CAP", "path": "Battery", "fmt": { "len": 32, "max": 3276, "div": 1310770, "unit": "kilowattHours" }, "name": "HV battery capacity", "description": "Total possible energy in the high voltage battery"}
   ]},
 { "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB8"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
-    {"id": "EGOLF_HVBAT_KWH", "path": "Battery", "fmt": { "len": 32, "max": 3276, "div": 1310770, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
+    {"id": "EGOLF_HVBAT_KWH", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 1638, "mul": 25, "div": 1000, "unit": "kilowattHours" }, "name": "HV battery energy", "description": "Energy stored in the high voltage battery"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1800"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_FL_VSS_V2", "path": "Movement", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1801"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_FR_VSS_V2", "path": "Movement", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1802"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_RL_VSS_V2", "path": "Movement", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1803"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_RR_VSS_V2", "path": "Movement", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1808"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_HDC_ACTIVE",  "path": "Engine", "fmt": {"bix": 6, "len": 1, "max": 1,   "unit": "offon"   }, "name": "Hill descent control"},
+    {"id": "EGOLF_HDC_INCLINE", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "percent" }, "name": "Hill descent control, incline"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "180C"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_EDL_ACTIVE",       "path": "Control", "fmt": {"bix": 1,  "len": 1,  "max": 1,                                       "unit": "offon"   }, "name": "Electronic differential lock: active"},
+    {"id": "EGOLF_EDL_FR_L_BRAKE_T", "path": "Control", "fmt": {"bix": 8,  "len": 16, "max": 300, "min": -20, "div": 2, "sign": true, "unit": "celsius" }, "name": "Electronic differential lock: front left brake temperature"},
+    {"id": "EGOLF_EDL_FR_R_BRAKE_T", "path": "Control", "fmt": {"bix": 24, "len": 16, "max": 300, "min": -20, "div": 2, "sign": true, "unit": "celsius" }, "name": "Electronic differential lock: front right brake temperature"},
+    {"id": "EGOLF_EDL_RR_L_BRAKE_T", "path": "Control", "fmt": {"bix": 40, "len": 16, "max": 300, "min": -20, "div": 2, "sign": true, "unit": "celsius" }, "name": "Electronic differential lock: rear left brake temperature"},
+    {"id": "EGOLF_EDL_RR_R_BRAKE_T", "path": "Control", "fmt": {"bix": 56, "len": 16, "max": 300, "min": -20, "div": 2, "sign": true, "unit": "celsius" }, "name": "Electronic differential lock: rear right brake temperature"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "180E"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_BDD_ACTIVE", "path": "Control", "fmt": {"bix": 1, "len": 1,  "max": 1,      "unit": "offon"      }, "name": "Brake disk drying"},
+    {"id": "EGOLF_BDD_ODO",    "path": "Control", "fmt": {"bix": 8, "len": 24, "max": 200000, "unit": "kilometers" }, "name": "Brake disk drying, odometer at last activation"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1810"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_HYD_BRAKE_BOOST_ACTIVE", "path": "Control", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "Hydraulic brake booster: active"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1816"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_BRAKE_P_SNS",        "path": "Control", "fmt": {"bix": 8,  "len": 16, "max": 327.67, "div": 100, "sign": true, "unit": "bars"    }, "name": "Brake pressure sensor"},
+    {"id": "EGOLF_AIR_GAB_VACUUM_SNS", "path": "Control", "fmt": {"bix": 56, "len": 16, "max": 32767,              "sign": true, "unit": "unknown" }, "name": "Air gab vacuum sensor"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "1821"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_TPMS_AVAIL",                          "path": "Tires", "fmt": {"bix": 7,   "len": 1,  "max": 1,      "unit": "noyes"      }, "name": "Tire pressure monitoring available"},
+    {"id": "EGOLF_TPMS_ODO_RDG_AT_LAST_ADAPT",          "path": "Trips", "fmt": {"bix": 8,   "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading at last adaptation"},
+    {"id": "EGOLF_TPMS_ODO_RDG_TWO_ADAPTATIONS_AGO",    "path": "Trips", "fmt": {"bix": 40,  "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading two adaptations ago"},
+    {"id": "EGOLF_TPMS_ODO_RDG_THREE_ADAPTATIONS_AGO",  "path": "Trips", "fmt": {"bix": 72,  "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading three adaptations ago"},
+    {"id": "EGOLF_TPMS_ODO_RDG_FOUR_ADAPTATIONS_AGO",   "path": "Trips", "fmt": {"bix": 104, "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading four adaptations ago"},
+    {"id": "EGOLF_TPMS_ODO_RDG_AT_LAST_WARN",           "path": "Trips", "fmt": {"bix": 136, "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading at last warning"},
+    {"id": "EGOLF_TPMS_ODO_RDG_AT_NEXT_TO_LAST_WARN",   "path": "Trips", "fmt": {"bix": 168, "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading at next-to-last warning"},
+    {"id": "EGOLF_TPMS_ODO_RDG_AT_THIRD_TO_LAST_WARN",  "path": "Trips", "fmt": {"bix": 200, "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading at third-to-last warning"},
+    {"id": "EGOLF_TPMS_ODO_RDG_AT_FOURTH_TO_LAST_WARN", "path": "Trips", "fmt": {"bix": 232, "len": 32, "max": 200000, "unit": "kilometers" }, "name": "Odometer reading at fourth-to-last warning"},
+    {"id": "EGOLF_TPMS_FR_L_TIRE_P_DIFF_IND",           "path": "Tires", "fmt": {"bix": 264, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Front left tire pressure diffusion indicator"},
+    {"id": "EGOLF_TPMS_FR_R_TIRE_P_DIFF_IND",           "path": "Tires", "fmt": {"bix": 272, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Front right tire pressure diffusion indicator"},
+    {"id": "EGOLF_TPMS_RR_L_TIRE_P_DIFF_IND",           "path": "Tires", "fmt": {"bix": 280, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Rear left tire pressure diffusion indicator"},
+    {"id": "EGOLF_TPMS_RR_R_TIRE_P_DIFF_IND",           "path": "Tires", "fmt": {"bix": 288, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Rear right tire pressure diffusion indicator"},
+    {"id": "EGOLF_TPMS_FR_L_FLAT_TIRE_IND",             "path": "Tires", "fmt": {"bix": 296, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Front left flat tire indicator"},
+    {"id": "EGOLF_TPMS_FR_R_FLAT_TIRE_IND",             "path": "Tires", "fmt": {"bix": 304, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Front right flat tire indicator"},
+    {"id": "EGOLF_TPMS_RR_L_FLAT_TIRE_IND",             "path": "Tires", "fmt": {"bix": 312, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Rear left flat tire indicator"},
+    {"id": "EGOLF_TPMS_RR_R_FLAT_TIRE_IND",             "path": "Tires", "fmt": {"bix": 320, "len": 8,  "max": 255,    "unit": "scalar"     }, "name": "Rear right flat tire indicator"}
+  ]},
+{ "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "18B6"}, "freq": 900,
+  "signals": [
+    {"id": "EGOLF_CNT_STEER_SUPPORT_ACTIVE",              "path": "Engine", "fmt": {"bix": 6,  "len": 1,  "max": 1,              "unit": "offon"        }, "name": "Counter steer support"},
+    {"id": "EGOLF_CNT_STEER_SUPPORT_ODO_RDG_OF_LAST_ACT", "path": "Trips",  "fmt": {"bix": 8,  "len": 24, "max": 1,              "unit": "kilometers"   }, "name": "Counter steer support, odometer, last activated"},
+    {"id": "EGOLF_CNT_STEER_SUPPORT_STEERING_TRQ",        "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 1, "div": 1000, "unit": "newtonMeters" }, "name": "Counter steer support, steering torque"}
+  ]},
+{ "hdr": "714", "rax": "77E", "fcm1": true, "dbg": true, "cmd": {"22": "1014"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_DASH_AAT", "path": "Climate", "fmt": { "len": 8, "max": 77.5, "min": -50, "div": 2, "add": -50, "unit": "celsius" }, "name": "Ambient air temperature, cluster"}
   ]},
 { "hdr": "714", "rax": "77E", "cmd": {"22": "2203"}, "freq": 10, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
     {"id": "EGOLF_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
+{ "hdr": "714", "rax": "77E", "fcm1": true, "dbg": true, "cmd": {"22": "224B"}, "freq": 300,
+  "signals": [
+    {"id": "EGOLF_DASH_OIL_THERMAL_WEAR", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Oil thermal wear"}
+  ]},
+{ "hdr": "714", "rax": "77E", "fcm1": true, "dbg": true, "cmd": {"22": "2299"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_DASH_AVG_FUEL_CONS", "path": "Fuel", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "liters" }, "name": "Average fuel consumption"}
+  ]},
 { "hdr": "714", "rax": "77E", "dbg": true, "cmd": {"22": "22E0"}, "freq": 1,
   "signals": [
-    {"id": "EGOLF_RANGE_DSP", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Range remaining (displayed)", "suggestedMetric": "electricRange"}
+    {"id": "EGOLF_RANGE_DSP", "path": "Trips", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Range remaining, displayed", "suggestedMetric": "electricRange"}
+  ]},
+{ "hdr": "715", "rax": "77F", "fcm1": true, "dbg": true, "cmd": {"22": "2353"}, "freq": 3600,
+  "signals": [
+    {"id": "EGOLF_CRASH_FRONT", "path": "Stats", "fmt": { "len": 8, "max": 100, "unit": "scalar" }, "name": "Crashes, front"}
+  ]},
+{ "hdr": "715", "rax": "77F", "fcm1": true, "dbg": true, "cmd": {"22": "2354"}, "freq": 3600,
+  "signals": [
+    {"id": "EGOLF_CRASH_DRIVER", "path": "Stats", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Crashes, driver side"}
+  ]},
+{ "hdr": "715", "rax": "77F", "fcm1": true, "dbg": true, "cmd": {"22": "2355"}, "freq": 3600,
+  "signals": [
+    {"id": "EGOLF_CRASH_PASSENGER", "path": "Stats", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Crashes, passenger side"}
+  ]},
+{ "hdr": "715", "rax": "77F", "fcm1": true, "dbg": true, "cmd": {"22": "2356"}, "freq": 3600,
+  "signals": [
+    {"id": "EGOLF_CRASH_REAR", "path": "Stats", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Crashes, rear"}
+  ]},
+{ "hdr": "715", "rax": "77F", "fcm1": true, "dbg": true, "cmd": {"22": "2357"}, "freq": 3600,
+  "signals": [
+    {"id": "EGOLF_CRASH_ROLLOVER", "path": "Stats", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Crashes, rollover"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15D3"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CHG_AC_I_SET", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "amps" }, "name": "Charger AC input current set point"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15D6"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_CHG_EFFICIENCY", "path": "Battery", "fmt": { "len": 8, "max": 100.499, "div": 10, "add": 75, "unit": "percent" }, "name": "Charging efficiency"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15D8"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CHG_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charger temperature"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15D9"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CHG_PFC_COIL_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charger power factor coil temperature"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15DA"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CHG_DCDC_COIL_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charger DC to DC coil temperature"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15DB"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CHG_LINK_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Charger DC link voltage"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15DC"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CHG_PFC_GATE_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Charger power factor gate driver voltage"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15DD"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CHG_DCDC_GATE_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Charger DC to DC gate driver voltage"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15E1"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_CHG_PWR_LOSS", "path": "Battery", "fmt": { "len": 8, "max": 5100, "mul": 20, "unit": "watts" }, "name": "Charger power loss"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "15EC"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_CHG_DCDC_LINE_T", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Charger DC to DC power line temperature"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "1DA7"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CHG_OUT_V", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "volts" }, "name": "Charger output voltage"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "1DA8"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_CHG_AC_I", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "amps" }, "name": "Charger AC input current"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "1DA9"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CHG_AC_V", "path": "Battery", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "volts" }, "name": "Charger AC input voltage"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "4237"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_CHG_HV_I", "path": "Battery", "fmt": {"bix": 8, "len": 8, "max": 63.749, "div": 4, "unit": "amps" }, "name": "Charger output current"}
+  ]},
+{ "hdr": "744", "dbg": true, "cmd": {"22": "4238"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CHG_HV_I_SET", "path": "Battery", "fmt": {"bix": 8, "len": 8, "max": 63.749, "div": 4, "unit": "amps" }, "name": "Charger output current set point"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2603"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_A_C_COMP_SPD", "path": "Movement", "fmt": { "len": 8, "max": 25500, "mul": 100, "unit": "rpm" }, "name": "A/C compressor speed"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2604"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_A_C_COMP_LOAD", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "newtonMeters" }, "name": "A/C compressor load"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2605"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_REFRIG_P", "path": "Engine", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "bars" }, "name": "Refrigerant pressure"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2606"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_RAD_FAN_ACT_DUTY", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 0.4, "unit": "percent" }, "name": "Radiator fan actual duty"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2607"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_RAD_FAN_CMD_DUTY", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 0.4, "unit": "percent" }, "name": "Radiator fan commanded duty"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2609"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_AAT_746", "path": "Climate", "fmt": { "len": 16, "max": 100, "min": -3276.8, "div": 10, "sign": true, "nullmax": 100, "unit": "celsius" }, "name": "Outside temperature"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "260C"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_FR_L_DEFL_T", "path": "Engine", "fmt": { "len": 8, "max": 84.915, "mul": 0.333, "unit": "celsius" }, "name": "Front left deflector temperature"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "260D"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_FR_R_DEFL_T", "path": "Engine", "fmt": { "len": 8, "max": 84.915, "mul": 0.333, "unit": "celsius" }, "name": "Front right deflector temperature"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2611"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_LEG_DEFL_T", "path": "Engine", "fmt": { "len": 8, "max": 84.915, "mul": 0.333, "unit": "celsius" }, "name": "Leg deflector temperature"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2612"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_T_AFTER_EVAP", "path": "Engine", "fmt": { "len": 8, "max": 42.291, "min": -42.624, "mul": 0.333, "sign": true, "unit": "celsius" }, "name": "Temperature after evaporator"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2613"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CABIN_T", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "celsius" }, "name": "Cabin temperature"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2622"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_FR_L_T_FLP_ACT_VALUE", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Front left temperature flap actual value"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "2626"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_FR_R_T_FLP_ACT_VALUE", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Front right temperature flap actual value"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "263D"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_RR_DEFL_T", "path": "Engine", "fmt": { "len": 8, "max": 84.915, "mul": 0.333, "unit": "celsius" }, "name": "Rear deflector temperature"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "26ED"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_AIR_POLUTION_LVL", "path": "Engine", "fmt": { "len": 8, "max": 12.7, "min": -12.8, "div": 10, "sign": true, "unit": "scalar" }, "name": "Air pollution level"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "dbg": true, "cmd": {"22": "482B"}, "freq": 2,
+  "signals": [
+    {"id": "EGOLF_CLIMATE_A_C_CLCH", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "A/C clutch"}
+  ]},
+{ "hdr": "767", "rax": "7D1", "fcm1": true, "dbg": true, "cmd": {"22": "0838"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_ECALL_SOC", "path": "Battery", "fmt": {"bix": 8, "len": 8, "max": 100, "unit": "percent" }, "name": "ECall battery charge level"},
+    {"id": "EGOLF_ECALL_STATUS", "path": "Battery", "name": "ECall battery status", "fmt": {"len": 8, "map": {
+          "1": { "description": "CRITICAL", "value": "CRITICAL" },
+          "2": { "description": "NORMAL",   "value": "NORMAL" }
+        }}
+    }
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1017"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_AC_REFRIG_P", "path": "Climate", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilopascal" }, "name": "Air conditioning refrigerant pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1028"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_DOWNSHIFT_ADAPT_V", "path": "Control", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Downshift point adaptation voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1029"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_APP_REDUCE_V", "path": "Control", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Accelerator pedal release detection threshold voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "102A"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_APP_V1", "path": "Control", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Accelerator pedal sensor 1 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "102B"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_APP_V2", "path": "Control", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Accelerator pedal sensor 2 voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "105A"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_BAT_V", "path": "Battery", "fmt": { "len": 16, "max": 1310700, "mul": 20, "unit": "millivolts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1077"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_AUX_PWR", "path": "Battery", "fmt": { "len": 16, "max": 262140, "mul": 4, "unit": "watts" }, "name": "Onboard electrical system power"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1164"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
-    {"id": "EGOLF_HVBAT_SOC_DISP", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "HV battery charge (displayed)", "suggestedMetric": "stateOfCharge"}
+    {"id": "EGOLF_HVBAT_SOC_DISP", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "HV battery charge, displayed", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1165"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_LOAD", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "HV battery temperature load"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "147D"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_I", "path": "Engine", "fmt": { "len": 16, "max": 1023.968, "min": -1024, "div": 32, "sign": true, "unit": "amps" }, "name": "Drive motor current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "147E"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_PWR", "path": "Engine", "fmt": { "len": 16, "max": 131.068, "min": -131.072, "div": 250, "sign": true, "unit": "kilowatts" }, "name": "Drive motor power"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "147F"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_TQ", "path": "Engine", "fmt": { "len": 16, "max": 10922.333, "min": -10922.666, "div": 3, "sign": true, "unit": "newtonMeters" }, "name": "Drive motor torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1484"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_MOTOR_V", "path": "Engine", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "Drive motor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1485"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_HVBAT_PWR", "path": "Battery", "fmt": { "len": 16, "max": 131.068, "min": -131.072, "div": 250, "sign": true, "unit": "kilowatts" }, "name": "HV battery power"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "149A"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_RPM_ECM", "path": "Engine", "fmt": { "len": 16, "max": 16383.749, "div": 4, "unit": "rpm" }, "name": "Drive motor speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "149B"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_REL", "path": "Battery", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "HV battery relative temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1502"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_HVBAT_PWR_MAX", "path": "Battery", "fmt": { "len": 16, "max": 262140, "mul": 4, "unit": "watts" }, "name": "HV battery maximum power"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1587"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_DCDC_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "DC to DC converter high-voltage side voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1604"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PTC_HEATER_I", "path": "Climate", "fmt": { "len": 8, "max": 15.937, "div": 16, "unit": "amps" }, "name": "Cabin heater current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1617"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_AUX_I", "path": "Battery", "fmt": { "len": 16, "max": 1023.968, "min": -1024, "div": 32, "sign": true, "unit": "amps" }, "name": "Onboard electrical system current"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F40D"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F421"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_MIL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled while mil was activated"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F430"}, "freq": 3600,
+  "signals": [
+    {"id": "EGOLF_WARM_UPS", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of warm-ups since diagnostic trouble codes cleared"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F431"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_CLR_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since diagnostic trouble codes cleared", "suggestedMetric": "distanceSinceDTCsCleared"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F433"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_BARO", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F442"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_KL30_V", "path": "Battery", "fmt": { "len": 16, "max": 65, "div": 1000, "unit": "volts" }, "name": "Terminal 30 voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F446"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_AAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F449"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_APP1", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Accelerator pedal position 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F44A"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_APP2", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Accelerator pedal position 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F45B"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_REMAINING", "path": "Battery", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "HV battery remaining charge"}
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "028C"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
     {"id": "EGOLF_HVBAT_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
   ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E0E"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_MAX",    "path": "Battery", "fmt": {           "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature, maximum"},
+    {"id": "EGOLF_HVBAT_T_MAX_NO", "path": "Battery", "fmt": {"bix": 24, "len": 8,  "max": 255,                 "unit": "scalar"  }, "name": "HV battery hottest sensor"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E0F"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_MIN_NO", "path": "Battery", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "HV battery coldest sensor"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E17"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HV_ISO_POS_SYS", "path": "Battery", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kiloohms" }, "name": "HV system isolation resistance, positive"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E18"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_ISO_POS", "path": "Battery", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kiloohms" }, "name": "HV battery isolation resistance, positive"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E19"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HV_ISO_NEG_SYS", "path": "Battery", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kiloohms" }, "name": "HV system isolation resistance, negative"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E1A"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_ISO_NEG", "path": "Battery", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "kiloohms" }, "name": "HV battery isolation resistance, negative"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E1B"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CHG_I_LIM", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "amps" }, "name": "HV battery charge current limit"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E1C"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_DISCHG_I_LIM", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "amps" }, "name": "HV battery discharge current limit"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E1D"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CHG_I_LIM_PRED", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "amps" }, "name": "HV battery charge current limit, predicted"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E1E"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_DISCHG_I_LIM_PRED", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "amps" }, "name": "HV battery discharge current limit, predicted"}
+  ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E32"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
-    {"id": "EGOLF_HVBAT_TOT_AH_CHRG",   "path": "Battery", "fmt": {           "len": 32, "max": 7818700,                  "div": 549.31642,                "unit": "ampereHours"   }, "name": "HV battery total ampere hours of charge"},
-    {"id": "EGOLF_HVBAT_TOT_AH_DCHRG",  "path": "Battery", "fmt": {"bix": 32, "len": 32, "max": 3909350, "min": -3909350, "div": 549.31642,  "sign": true, "unit": "ampereHours"   }, "name": "HV battery total ampere hours of discharge"},
-    {"id": "EGOLF_HVBAT_TOT_KWH_CHRG",  "path": "Battery", "fmt": {"bix": 64, "len": 32, "max": 500300,                   "div": 8583.07212,               "unit": "kilowattHours" }, "name": "HV battery total kilowatt hours of charge"},
-    {"id": "EGOLF_HVBAT_TOT_KWH_DCHRG", "path": "Battery", "fmt": {"bix": 96, "len": 32, "max": 250300,  "min": -250300,  "div": 8583.07212, "sign": true, "unit": "kilowattHours" }, "name": "HV battery total kilowatt hours of discharge"}
+    {"id": "EGOLF_HVBAT_TOT_AH_CHRG",   "path": "Battery", "fmt": {           "len": 32, "max": 7818700,                          "div": 549.31642,                "unit": "ampereHours"   }, "name": "HV battery total ampere hours of charge"},
+    {"id": "EGOLF_HVBAT_TOT_AH_DCHRG",  "path": "Battery", "fmt": {"bix": 32, "len": 32, "max": 3909350,     "min": -3909350,     "div": 549.31642,  "sign": true, "unit": "ampereHours"   }, "name": "HV battery total ampere hours of discharge"},
+    {"id": "EGOLF_HVBAT_TOT_KWH_CHRG",  "path": "Battery", "fmt": {"bix": 64, "len": 32, "max": 500300,                           "div": 8583.07212,               "unit": "kilowattHours" }, "name": "HV battery total kilowatt hours of charge"},
+    {"id": "EGOLF_HVBAT_TOT_KWH_DCHRG", "path": "Battery", "fmt": {"bix": 96, "len": 32, "max": 250199.8837, "min": -250199.8839, "div": 8583.07212, "sign": true, "unit": "kilowattHours" }, "name": "HV battery total kilowatt hours of discharge"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E33"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_V_MAX",    "path": "Battery", "fmt": {           "len": 16, "max": 15.999, "div": 4096, "unit": "volts"  }, "name": "HV battery cell voltage, maximum"},
+    {"id": "EGOLF_HVBAT_CELL_V_MAX_NO", "path": "Battery", "fmt": {"bix": 24, "len": 8,  "max": 255,                 "unit": "scalar" }, "name": "HV battery highest cell"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E34"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_V_MIN",    "path": "Battery", "fmt": {           "len": 16, "max": 15.999, "div": 4096, "unit": "volts"  }, "name": "HV battery cell voltage, minimum"},
+    {"id": "EGOLF_HVBAT_CELL_V_MIN_NO", "path": "Battery", "fmt": {"bix": 24, "len": 8,  "max": 255,                 "unit": "scalar" }, "name": "HV battery lowest cell"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E35"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_NEG_V_PRE", "path": "Battery", "fmt": { "len": 16, "max": 1023.968, "min": -1024, "div": 32, "sign": true, "unit": "volts" }, "name": "HV battery negative voltage before the contactors"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E36"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_POS_V_PRE", "path": "Battery", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "HV battery positive voltage before the contactors"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E39"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HVBAT_POS_V_POST_CHG", "path": "Battery", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "volts" }, "name": "HV battery positive voltage after the charging contactors"}
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E3B"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
     {"id": "EGOLF_HVBAT_VOLTS", "path": "Battery", "fmt": { "len": 16, "max": 1000, "div": 4, "unit": "volts" }, "name": "HV battery voltage"}
   ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E3C"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_SUM_V", "path": "Battery", "fmt": { "len": 24, "max": 4095.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell voltage sum"}
+  ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E3D"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
     {"id": "EGOLF_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 200, "min": -200, "div": 4, "add": -511, "unit": "amps" }, "name": "HV battery current"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E40"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_1_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 1 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E41"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_2_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 2 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E42"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_3_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 3 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E43"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_4_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 4 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E44"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_5_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 5 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E45"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_6_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 6 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E46"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_7_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 7 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E47"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_8_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 8 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E48"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_9_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 9 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E49"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_10_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 10 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E4A"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_11_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 11 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E4B"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_12_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 12 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E4C"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_13_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 13 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E4D"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_14_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 14 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E4E"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_15_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 15 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E4F"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_16_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 16 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E50"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_17_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 17 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E51"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_18_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 18 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E52"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_19_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 19 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E53"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_20_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 20 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E54"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_21_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 21 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E55"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_22_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 22 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E56"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_23_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 23 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E57"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_24_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 24 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E58"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_25_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 25 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E59"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_26_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 26 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E5A"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_27_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 27 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E5B"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_28_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 28 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E5C"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_29_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 29 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E5D"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_30_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 30 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E5E"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_31_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 31 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E5F"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_32_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 32 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E60"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_33_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 33 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E61"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_34_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 34 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E62"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_35_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 35 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E63"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_36_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 36 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E64"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_37_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 37 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E65"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_38_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 38 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E66"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_39_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 39 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E67"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_40_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 40 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E68"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_41_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 41 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E69"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_42_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 42 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E6A"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_43_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 43 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E6B"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_44_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 44 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E6C"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_45_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 45 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E6D"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_46_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 46 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E6E"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_47_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 47 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E6F"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_48_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 48 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E70"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_49_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 49 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E71"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_50_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 50 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E72"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_51_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 51 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E73"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_52_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 52 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E74"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_53_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 53 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E75"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_54_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 54 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E76"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_55_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 55 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E77"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_56_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 56 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E78"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_57_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 57 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E79"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_58_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 58 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E7A"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_59_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 59 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E7B"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_60_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 60 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E7C"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_61_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 61 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E7D"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_62_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 62 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E7E"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_63_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 63 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E7F"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_64_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 64 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E80"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_65_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 65 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E81"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_66_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 66 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E82"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_67_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 67 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E83"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_68_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 68 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E84"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_69_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 69 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E85"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_70_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 70 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E86"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_71_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 71 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E87"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_72_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 72 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E88"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_73_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 73 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E89"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_74_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 74 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E8A"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_75_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 75 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E8B"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_76_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 76 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E8C"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_77_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 77 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E8D"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_78_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 78 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E8E"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_79_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 79 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E8F"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_80_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 80 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E90"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_81_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 81 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E91"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_82_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 82 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E92"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_83_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 83 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E93"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_84_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 84 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E94"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_85_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 85 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E95"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_86_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 86 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E96"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_87_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 87 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E97"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_88_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 88 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E98"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_89_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 89 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E99"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_90_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 90 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E9A"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_91_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 91 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E9B"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_92_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 92 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E9C"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_93_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 93 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E9D"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_94_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 94 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E9E"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_95_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 95 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1E9F"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_96_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 96 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EA0"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_97_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 97 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EA1"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_98_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 98 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EA2"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_99_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 99 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EA3"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_100_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 100 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EA4"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_101_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 101 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EA5"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_CELL_102_V", "path": "Battery", "fmt": { "len": 16, "max": 15.999, "div": 4096, "unit": "volts" }, "name": "HV battery cell 102 voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EAE"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_1", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 1"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EAF"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_2", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 2"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB0"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_3", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 3"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB1"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_4", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 4"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB2"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_5", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 5"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB3"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_6", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 6"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB4"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_7", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 7"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB5"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_8", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 8"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB6"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_9", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 9"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB7"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_10", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 10"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB8"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_11", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 11"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EB9"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_12", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 12"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EBA"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_13", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 13"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EBC"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_15", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 15"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "1EBD"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_16", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 16"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "2A0B"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "51E0"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_HVBAT_SOH", "path": "Battery", "fmt": { "len": 16, "max": 100, "min": -1798.574, "mul": 0.127, "add": -1798.574, "unit": "percent" }, "name": "HV battery health", "suggestedMetric": "stateOfHealth"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "7425"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_HVBAT_T_17", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "HV battery temperature sensor 17"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "74B9"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HV_INTERLOCK_DET_V", "path": "Battery", "fmt": { "len": 16, "max": 20.004, "div": 3276, "unit": "volts" }, "name": "HV interlock detector voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "74BA"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_HV_INTERLOCK_SRC_V", "path": "Battery", "fmt": { "len": 16, "max": 20.004, "div": 3276, "unit": "volts" }, "name": "HV interlock source voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "dbg": true, "cmd": {"22": "74BC"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_HV_INTERLOCK_SRC_I", "path": "Battery", "fmt": { "len": 16, "max": 63.999, "div": 1024, "unit": "milliamps" }, "name": "HV interlock source current"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "0308"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_TQ_CALC", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "newtonMeters" }, "name": "Drive motor torque, calculated"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3E72"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_DCDC_LINK_V", "path": "Battery", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "DC to DC converter link voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3E93"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_LINK_V", "path": "Engine", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "Power electronics link voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3E94"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_MOTOR_T", "path": "Engine", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "Drive motor temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3E97"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.749, "div": 4, "unit": "rpm" }, "name": "Drive motor speed, actual", "suggestedMetric": "engineSpeed"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3EB5"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_PE_DCDC_T", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "DC to DC converter temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3EE9"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_TQ_PE", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "newtonMeters" }, "name": "Drive motor torque, actual"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3EEC"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_RPM_2", "path": "Engine", "fmt": { "len": 16, "max": 16383.749, "div": 4, "unit": "rpm" }, "name": "Drive motor speed 2"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3EED"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_PE_LINK_V_SET", "path": "Engine", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "Power electronics link voltage set point"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3EF9"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_U_I", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "amps" }, "name": "Drive motor phase u current"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3EFA"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_V_I", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "amps" }, "name": "Drive motor phase v current"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "3EFB"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_W_I", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "amps" }, "name": "Drive motor phase w current"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "464E"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_DCDC_PCB_T", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "DC to DC converter circuit board temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "464F"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_DCDC_PWR_T", "path": "Battery", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "DC to DC converter power stage temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4650"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_DCDC_HV_I", "path": "Battery", "fmt": { "len": 16, "max": 63.998, "min": -64, "div": 512, "sign": true, "unit": "amps" }, "name": "DC to DC converter traction current"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4656"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_PWR_PE", "path": "Engine", "fmt": { "len": 16, "max": 511.984, "min": -512, "div": 64, "sign": true, "unit": "kilowatts" }, "name": "Drive motor power, actual"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4658"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_PWR_CALC", "path": "Engine", "fmt": { "len": 16, "max": 511.984, "min": -512, "div": 64, "sign": true, "unit": "kilowatts" }, "name": "Drive motor power, calculated"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4659"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_RPM_ACT", "path": "Engine", "fmt": { "len": 16, "max": 16383.749, "div": 4, "unit": "rpm" }, "name": "Drive motor speed, measured"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "465A"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_IGBT_SUPPLY_V", "path": "Engine", "fmt": { "len": 16, "max": 63.998, "min": -64, "div": 512, "sign": true, "unit": "volts" }, "name": "Power electronics transistor supply voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "465C"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_PE_DCDC_KL30_V", "path": "Battery", "fmt": { "len": 16, "max": 63.998, "min": -64, "div": 512, "sign": true, "unit": "volts" }, "name": "DC to DC converter regulated output voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "465D"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_KL30_V", "path": "Battery", "fmt": { "len": 16, "max": 63.998, "min": -64, "div": 512, "sign": true, "unit": "volts" }, "name": "Power electronics terminal 30 voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "465E"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_PE_DCDC_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "DC to DC converter traction voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "465F"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_BMS_HV_I", "path": "Battery", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "amps" }, "name": "Traction current reported by the battery management system"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4660"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_ROTOR_SIN", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Rotor position sensor sine track"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4661"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_ROTOR_COS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Rotor position sensor cosine track"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4662"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_IGBT_W_T", "path": "Engine", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "Power electronics phase w transistor temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4663"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_IGBT_V_T", "path": "Engine", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "Power electronics phase v transistor temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4664"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_IGBT_U_T", "path": "Engine", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "Power electronics phase u transistor temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4665"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_I_RMS", "path": "Engine", "fmt": { "len": 16, "max": 4095.937, "div": 16, "unit": "amps" }, "name": "Drive motor effective current"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "466B"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_SUPPLY_V2", "path": "Engine", "fmt": { "len": 16, "max": 127.998, "div": 512, "unit": "volts" }, "name": "Power electronics internal supply voltage 2"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "466C"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_SUPPLY_V1", "path": "Engine", "fmt": { "len": 16, "max": 127.998, "div": 512, "unit": "volts" }, "name": "Power electronics internal supply voltage 1"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "466E"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_PE_BMS_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "Traction voltage reported by the battery management system"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "466F"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_MOTOR_W_I_RAW", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "amps" }, "name": "Drive motor phase w current, unlimited"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4670"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_MOTOR_V_I_RAW", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "amps" }, "name": "Drive motor phase v current, unlimited"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4671"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_MOTOR_U_I_RAW", "path": "Engine", "fmt": { "len": 16, "max": 2047.937, "min": -2048, "div": 16, "sign": true, "unit": "amps" }, "name": "Drive motor phase u current, unlimited"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4672"}, "freq": 5,
+  "signals": [
+    {"id": "EGOLF_MOTOR_STATOR_T", "path": "Engine", "fmt": { "len": 16, "max": 1023.984, "div": 64, "unit": "celsius" }, "name": "Drive motor stator temperature"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4675"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_PE_HV_V", "path": "Engine", "fmt": { "len": 16, "max": 2047.968, "div": 32, "unit": "volts" }, "name": "Power electronics traction voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4E90"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_ROTOR_SIN_AMP_V", "path": "Engine", "fmt": { "len": 16, "max": 127.998, "div": 512, "unit": "volts" }, "name": "Rotor position sensor sine amplitude"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4E91"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_ROTOR_COS_AMP_V", "path": "Engine", "fmt": { "len": 16, "max": 127.998, "div": 512, "unit": "volts" }, "name": "Rotor position sensor cosine amplitude"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4E92"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_ROTOR_SIN_V", "path": "Engine", "fmt": { "len": 16, "max": 127.998, "div": 512, "unit": "volts" }, "name": "Rotor position sensor sine voltage"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "4E93"}, "freq": 1,
+  "signals": [
+    {"id": "EGOLF_ROTOR_COS_OFS_V", "path": "Engine", "fmt": { "len": 16, "max": 127.998, "div": 512, "unit": "volts" }, "name": "Rotor position sensor cosine offset"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "F404"}, "freq": 30,
+  "signals": [
+    {"id": "EGOLF_PE_SOC", "path": "Battery", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "HV battery charge, normalized"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "F40C"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_MOTOR_RPM_SAE", "path": "Engine", "fmt": { "len": 16, "max": 16383.749, "div": 4, "unit": "rpm" }, "name": "Drive motor speed, standard"}
+  ]},
+{ "hdr": "7E6", "dbg": true, "cmd": {"22": "F449"}, "freq": 0.25,
+  "signals": [
+    {"id": "EGOLF_APP_PE", "path": "Control", "fmt": { "len": 8, "max": 100, "div": 2.55, "unit": "percent" }, "name": "Accelerator pedal position"}
   ]}
 ]
 }
