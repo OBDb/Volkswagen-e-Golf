@@ -4,5 +4,5 @@ test_cases:
     EGOLF_CLIMATE_FR_L_DEFL_T: 10.323
   response: 7B00462260C1F
 - expected_values:
-    EGOLF_CLIMATE_FR_L_DEFL_T: 16.983
-  response: 7B00462260C33
+    EGOLF_CLIMATE_FR_L_DEFL_T: 21.645
+  response: 7B00462260C41
