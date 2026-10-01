@@ -1,0 +1,11 @@
+command_id: 7E6.224650
+test_cases:
+- expected_values:
+    EGOLF_DCDC_HV_I: 0
+  response: 7EE056246500000
+- expected_values:
+    EGOLF_DCDC_HV_I: -0.95703
+  response: 7EE05624650FE16
+- expected_values:
+    EGOLF_DCDC_HV_I: -0.57031
+  response: 7EE05624650FEDC

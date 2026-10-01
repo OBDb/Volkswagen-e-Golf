@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221077
+test_cases:
+- expected_values:
+    EGOLF_AUX_PWR: 0
+  response: '7E8056210770000'
+- expected_values:
+    EGOLF_AUX_PWR: 736
+  response: 7E80562107700B8

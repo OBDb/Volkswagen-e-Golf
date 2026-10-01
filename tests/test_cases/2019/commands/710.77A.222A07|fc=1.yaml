@@ -1,0 +1,14 @@
+command_id: 710.77A.222A07|fc=1
+test_cases:
+- expected_values:
+    EGOLF_BAT_V_2A07: 12.352
+  response: 77A05622A0720A0
+- expected_values:
+    EGOLF_BAT_V_2A07: 12.448
+  response: 77A05622A072100
+- expected_values:
+    EGOLF_BAT_V_2A07: 13.462
+  response: 77A05622A0724F6
+- expected_values:
+    EGOLF_BAT_V_2A07: 14.146
+  response: 77A05622A0727A2

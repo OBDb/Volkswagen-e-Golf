@@ -1,0 +1,17 @@
+command_id: 7E5.7ED.2274B9
+test_cases:
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.49756
+  response: 7ED056274B9065E
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.49878
+  response: 7ED056274B90662
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.5
+  response: 7ED056274B90666
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.50031
+  response: 7ED056274B90667
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.50122
+  response: 7ED056274B9066A

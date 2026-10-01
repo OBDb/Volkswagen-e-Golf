@@ -1,0 +1,18 @@
+command_id: 7E5.7ED.221E34
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MIN: 3.6189
+    EGOLF_HVBAT_CELL_V_MIN_NO: 7
+  response: 7ED07621E3439E70007
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MIN: 3.7478
+    EGOLF_HVBAT_CELL_V_MIN_NO: 8
+  response: 7ED07621E343BF70008
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MIN: 3.86475
+    EGOLF_HVBAT_CELL_V_MIN_NO: 69
+  response: 7ED07621E343DD60045
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MIN: 4.06274
+    EGOLF_HVBAT_CELL_V_MIN_NO: 48
+  response: 7ED07621E3441010030

@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.221E1D
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_CHG_I_LIM_PRED: 0
+  response: 7ED05621E1D001B
+- expected_values:
+    EGOLF_HVBAT_CHG_I_LIM_PRED: 0
+  response: 7ED05621E1D0095

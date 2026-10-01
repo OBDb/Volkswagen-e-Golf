@@ -1,0 +1,26 @@
+command_id: 7E6.224659
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 0
+  response: 7EE056246590000
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 0.25
+  response: 7EE056246590001
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 66.25
+  response: 7EE056246590109
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 214.5
+  response: 7EE05624659035A
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 333.25
+  response: 7EE056246590535
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 652.5
+  response: 7EE056246590A32
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 1237.5
+  response: 7EE056246591356
+- expected_values:
+    EGOLF_MOTOR_RPM_ACT: 1320
+  response: 7EE0562465914A0

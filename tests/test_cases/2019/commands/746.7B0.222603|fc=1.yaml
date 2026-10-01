@@ -1,0 +1,23 @@
+command_id: 746.7B0.222603|fc=1
+test_cases:
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 0
+  response: 7B00462260300
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 800
+  response: 7B00462260308
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 900
+  response: 7B00462260309
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 1000
+  response: 7B0046226030A
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 1100
+  response: 7B0046226030B
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 1300
+  response: 7B0046226030D
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 1400
+  response: 7B0046226030E

@@ -1,0 +1,26 @@
+command_id: 7E6.22466B
+test_cases:
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 4.99609
+  response: 7EE0562466B09FE
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 5
+  response: 7EE0562466B0A00
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 5.00195
+  response: 7EE0562466B0A01
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 5.00391
+  response: 7EE0562466B0A02
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 5.00586
+  response: 7EE0562466B0A03
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 5.00977
+  response: 7EE0562466B0A05
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 5.01172
+  response: 7EE0562466B0A06
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 5.01367
+  response: 7EE0562466B0A07

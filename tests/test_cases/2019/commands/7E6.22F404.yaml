@@ -1,0 +1,5 @@
+command_id: 7E6.22F404
+test_cases:
+- expected_values:
+    EGOLF_PE_SOC: 100
+  response: 7EE0462F404FF

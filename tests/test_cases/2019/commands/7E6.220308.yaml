@@ -1,0 +1,32 @@
+command_id: 7E6.220308
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: 0
+  response: 7EE056203080000
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: 0.6875
+  response: 7EE05620308000B
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: 18.625
+  response: 7EE05620308012A
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: 74.0625
+  response: 7EE0562030804A1
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: 79.25
+  response: 7EE0562030804F4
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: -18.75
+  response: 7EE05620308FED4
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: -3.5625
+  response: 7EE05620308FFC7
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: -0.1875
+  response: 7EE05620308FFFD
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: -0.125
+  response: 7EE05620308FFFE
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: -0.0625
+  response: 7EE05620308FFFF

@@ -1,0 +1,29 @@
+command_id: 7E5.7ED.221E19
+test_cases:
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4660
+  response: 7ED06621E1901D200
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4680
+  response: 7ED06621E1901D400
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4700
+  response: 7ED06621E1901D643
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4710
+  response: 7ED06621E1901D700
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4710
+  response: 7ED06621E1901D780
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4720
+  response: 7ED06621E1901D800
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4740
+  response: 7ED06621E1901DA00
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4770
+  response: 7ED06621E1901DD00
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4780
+  response: 7ED06621E1901DE00
