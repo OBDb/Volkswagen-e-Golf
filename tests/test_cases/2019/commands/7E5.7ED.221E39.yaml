@@ -1,0 +1,11 @@
+command_id: 7E5.7ED.221E39
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_POS_V_POST_CHG: 0
+  response: 7ED05621E390000
+- expected_values:
+    EGOLF_HVBAT_POS_V_POST_CHG: 350.9375
+  response: 7ED05621E3915EF
+- expected_values:
+    EGOLF_HVBAT_POS_V_POST_CHG: 368.875
+  response: 7ED05621E39170E

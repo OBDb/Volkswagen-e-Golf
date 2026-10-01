@@ -1,0 +1,23 @@
+command_id: 7E6.22F449
+test_cases:
+- expected_values:
+    EGOLF_APP_PE: 15.29412
+  response: 7EE0462F44927
+- expected_values:
+    EGOLF_APP_PE: 16.86275
+  response: 7EE0462F4492B
+- expected_values:
+    EGOLF_APP_PE: 21.56863
+  response: 7EE0462F44937
+- expected_values:
+    EGOLF_APP_PE: 26.66667
+  response: 7EE0462F44944
+- expected_values:
+    EGOLF_APP_PE: 28.23529
+  response: 7EE0462F44948
+- expected_values:
+    EGOLF_APP_PE: 35.68627
+  response: 7EE0462F4495B
+- expected_values:
+    EGOLF_APP_PE: 38.82353
+  response: 7EE0462F44963

@@ -1,0 +1,14 @@
+command_id: 746.7B0.222607|fc=1
+test_cases:
+- expected_values:
+    EGOLF_CLIMATE_RAD_FAN_CMD_DUTY: 0
+  response: 7B00462260700
+- expected_values:
+    EGOLF_CLIMATE_RAD_FAN_CMD_DUTY: 22.8
+  response: 7B00462260739
+- expected_values:
+    EGOLF_CLIMATE_RAD_FAN_CMD_DUTY: 24
+  response: 7B0046226073C
+- expected_values:
+    EGOLF_CLIMATE_RAD_FAN_CMD_DUTY: 25.6
+  response: 7B00462260740

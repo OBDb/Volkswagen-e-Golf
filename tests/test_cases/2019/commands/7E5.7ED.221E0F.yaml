@@ -1,0 +1,17 @@
+command_id: 7E5.7ED.221E0F
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_T_MIN_NO: 14
+  response: 7ED07621E0F06A0000E
+- expected_values:
+    EGOLF_HVBAT_T_MIN_NO: 26
+  response: 7ED07621E0F06C0001A
+- expected_values:
+    EGOLF_HVBAT_T_MIN_NO: 14
+  response: 7ED07621E0F0700000E
+- expected_values:
+    EGOLF_HVBAT_T_MIN_NO: 14
+  response: 7ED07621E0F07E0000E
+- expected_values:
+    EGOLF_HVBAT_T_MIN_NO: 14
+  response: 7ED07621E0F0800000E

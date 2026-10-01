@@ -1,0 +1,5 @@
+command_id: 7E6.223EED
+test_cases:
+- expected_values:
+    EGOLF_PE_LINK_V_SET: 0
+  response: 7EE05623EED0000
