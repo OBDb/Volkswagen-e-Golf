@@ -1,0 +1,32 @@
+command_id: 7E6.223EF9
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_U_I: 0.125
+  response: 7EE05623EF90002
+- expected_values:
+    EGOLF_MOTOR_U_I: 0.8125
+  response: 7EE05623EF9000D
+- expected_values:
+    EGOLF_MOTOR_U_I: 42.875
+  response: 7EE05623EF902AE
+- expected_values:
+    EGOLF_MOTOR_U_I: -319.1875
+  response: 7EE05623EF9EC0D
+- expected_values:
+    EGOLF_MOTOR_U_I: -35.0625
+  response: 7EE05623EF9FDCF
+- expected_values:
+    EGOLF_MOTOR_U_I: -28.1875
+  response: 7EE05623EF9FE3D
+- expected_values:
+    EGOLF_MOTOR_U_I: -10.9375
+  response: 7EE05623EF9FF51
+- expected_values:
+    EGOLF_MOTOR_U_I: -2.6875
+  response: 7EE05623EF9FFD5
+- expected_values:
+    EGOLF_MOTOR_U_I: -1.25
+  response: 7EE05623EF9FFEC
+- expected_values:
+    EGOLF_MOTOR_U_I: -0.5625
+  response: 7EE05623EF9FFF7

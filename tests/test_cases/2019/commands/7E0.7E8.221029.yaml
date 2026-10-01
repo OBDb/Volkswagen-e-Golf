@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.221029
+test_cases:
+- expected_values:
+    EGOLF_APP_REDUCE_V: 4125
+  response: '7E8056210295091'

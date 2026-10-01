@@ -1,0 +1,11 @@
+command_id: 7E5.7ED.221E35
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_NEG_V_PRE: -172.625
+  response: 7ED05621E35EA6C
+- expected_values:
+    EGOLF_HVBAT_NEG_V_PRE: -160.375
+  response: 7ED05621E35EBF4
+- expected_values:
+    EGOLF_HVBAT_NEG_V_PRE: -151.6875
+  response: 7ED05621E35ED0A

@@ -1,0 +1,5 @@
+command_id: 7E6.223EEC
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_RPM_2: 0
+  response: 7EE05623EEC0000

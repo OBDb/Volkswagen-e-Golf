@@ -1,0 +1,8 @@
+command_id: 746.7B0.222605|fc=1
+test_cases:
+- expected_values:
+    EGOLF_CLIMATE_REFRIG_P: 7.4
+  response: 7B00462260525
+- expected_values:
+    EGOLF_CLIMATE_REFRIG_P: 9.8
+  response: 7B00462260531

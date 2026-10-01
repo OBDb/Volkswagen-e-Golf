@@ -1,0 +1,26 @@
+command_id: 7E6.224658
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: 0
+  response: 7EE056246580000
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: 3.34375
+  response: 7EE0562465800D6
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: 12.4375
+  response: 7EE05624658031C
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: 16.84375
+  response: 7EE056246580436
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: 20.875
+  response: 7EE056246580538
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: -5.45312
+  response: 7EE05624658FEA3
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: -1.625
+  response: 7EE05624658FF98
+- expected_values:
+    EGOLF_MOTOR_PWR_CALC: -0.01562
+  response: 7EE05624658FFFF

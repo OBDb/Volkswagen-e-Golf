@@ -1,0 +1,5 @@
+command_id: 7E6.22F40C
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_RPM_SAE: 0
+  response: 7EE0562F40C0000

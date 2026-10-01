@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.221E1A
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_ISO_NEG: 10210
+  response: 7ED06621E1A03FD00
+- expected_values:
+    EGOLF_HVBAT_ISO_NEG: 10210
+  response: 7ED06621E1A03FD80

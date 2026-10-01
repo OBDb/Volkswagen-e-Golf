@@ -1,0 +1,23 @@
+command_id: 7E5.7ED.2274BC
+test_cases:
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.85938
+  response: 7ED056274BC1F70
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.86133
+  response: 7ED056274BC1F72
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.8623
+  response: 7ED056274BC1F73
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.86328
+  response: 7ED056274BC1F74
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.86426
+  response: 7ED056274BC1F75
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.86523
+  response: 7ED056274BC1F76
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.86621
+  response: 7ED056274BC1F77
