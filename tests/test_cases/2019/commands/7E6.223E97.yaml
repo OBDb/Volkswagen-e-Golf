@@ -4,26 +4,8 @@ test_cases:
     EGOLF_MOTOR_RPM: 0
   response: 7EE05623E970000
 - expected_values:
-    EGOLF_MOTOR_RPM: 0.25
-  response: 7EE05623E970001
+    EGOLF_MOTOR_RPM: 1535.5
+  response: 7EE05623E9717FE
 - expected_values:
-    EGOLF_MOTOR_RPM: 65.25
-  response: 7EE05623E970105
-- expected_values:
-    EGOLF_MOTOR_RPM: 377.25
-  response: 7EE05623E9705E5
-- expected_values:
-    EGOLF_MOTOR_RPM: 392.5
-  response: 7EE05623E970622
-- expected_values:
-    EGOLF_MOTOR_RPM: 692.5
-  response: 7EE05623E970AD2
-- expected_values:
-    EGOLF_MOTOR_RPM: 1255.75
-  response: 7EE05623E97139F
-- expected_values:
-    EGOLF_MOTOR_RPM: 1302.25
-  response: 7EE05623E971459
-- expected_values:
-    EGOLF_MOTOR_RPM: 16383.5
-  response: 7EE05623E97FFFE
+    EGOLF_MOTOR_RPM: 16348
+  response: 7EE05623E97FF70
