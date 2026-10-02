@@ -5,4 +5,4 @@ test_cases:
   response: 7ED06621E1803FD00
 - expected_values:
     EGOLF_HVBAT_ISO_POS: 10210
-  response: 7ED06621E1803FD79
+  response: 7ED06621E1803FD9E
