@@ -1,17 +1,17 @@
 command_id: 710.77A.222A09|fc=1
 test_cases:
 - expected_values:
-    EGOLF_BAT_I: 0.307
-  response: 77A07622A0900000133
+    EGOLF_BAT_I: 0.199
+  response: 77A07622A09000000C7
 - expected_values:
-    EGOLF_BAT_I: 2.072
-  response: 77A07622A0900000818
+    EGOLF_BAT_I: 0.255
+  response: 77A07622A09000000FF
 - expected_values:
-    EGOLF_BAT_I: 7.909
-  response: 77A07622A0900001EE5
+    EGOLF_BAT_I: 0.258
+  response: 77A07622A0900000102
 - expected_values:
-    EGOLF_BAT_I: -10.053
-  response: 77A07622A09FFFFD8BB
+    EGOLF_BAT_I: -10.798
+  response: 77A07622A09FFFFD5D2
 - expected_values:
     EGOLF_BAT_I: -5.056
   response: 77A07622A09FFFFEC40
