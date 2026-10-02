@@ -14,6 +14,15 @@ test_cases:
   response: 7ED05621E1C015D
 - expected_values:
     EGOLF_HVBAT_DISCHG_I_LIM: 1
+  response: 7ED05621E1C015E
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM: 1
+  response: 7ED05621E1C015F
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM: 1
+  response: 7ED05621E1C0160
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM: 1
   response: 7ED05621E1C0163
 - expected_values:
     EGOLF_HVBAT_DISCHG_I_LIM: 1

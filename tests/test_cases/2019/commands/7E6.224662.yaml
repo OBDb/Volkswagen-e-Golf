@@ -10,5 +10,5 @@ test_cases:
     EGOLF_PE_IGBT_W_T: 39.95312
   response: 7EE0562466209FD
 - expected_values:
-    EGOLF_PE_IGBT_W_T: 48.21875
-  response: 7EE056246620C0E
+    EGOLF_PE_IGBT_W_T: 55.09375
+  response: 7EE056246620DC6

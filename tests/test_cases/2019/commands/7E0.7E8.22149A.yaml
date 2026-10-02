@@ -4,8 +4,8 @@ test_cases:
     EGOLF_MOTOR_RPM_ECM: 0
   response: 7E80562149A0000
 - expected_values:
-    EGOLF_MOTOR_RPM_ECM: 16383
-  response: 7E80562149AFFFC
+    EGOLF_MOTOR_RPM_ECM: 16382.5
+  response: 7E80562149AFFFA
 - expected_values:
     EGOLF_MOTOR_RPM_ECM: 16383.5
   response: 7E80562149AFFFE

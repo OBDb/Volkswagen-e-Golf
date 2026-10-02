@@ -4,8 +4,11 @@ test_cases:
     EGOLF_HV_ISO_POS_SYS: 4790
   response: 7ED06621E1701DF00
 - expected_values:
-    EGOLF_HV_ISO_POS_SYS: 4850
-  response: 7ED06621E1701E580
+    EGOLF_HV_ISO_POS_SYS: 4810
+  response: 7ED06621E1701E180
 - expected_values:
     EGOLF_HV_ISO_POS_SYS: 4880
   response: 7ED06621E1701E800
+- expected_values:
+    EGOLF_HV_ISO_POS_SYS: 5370
+  response: 7ED06621E17021900
