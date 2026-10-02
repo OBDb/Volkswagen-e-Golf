@@ -4,5 +4,8 @@ test_cases:
     EGOLF_AUX_PWR: 0
   response: '7E8056210770000'
 - expected_values:
+    EGOLF_AUX_PWR: 192
+  response: '7E8056210770030'
+- expected_values:
     EGOLF_AUX_PWR: 736
   response: 7E80562107700B8
