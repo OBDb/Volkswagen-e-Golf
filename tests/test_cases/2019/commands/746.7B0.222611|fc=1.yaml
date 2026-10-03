@@ -4,5 +4,5 @@ test_cases:
     EGOLF_CLIMATE_LEG_DEFL_T: 7.992
   response: 7B00462261118
 - expected_values:
-    EGOLF_CLIMATE_LEG_DEFL_T: 16.983
-  response: 7B00462261133
+    EGOLF_CLIMATE_LEG_DEFL_T: 21.645
+  response: 7B00462261141
