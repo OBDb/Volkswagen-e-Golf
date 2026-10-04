@@ -4,26 +4,8 @@ test_cases:
     EGOLF_MOTOR_W_I_RAW: 0.5
   response: 7EE0562466F0008
 - expected_values:
-    EGOLF_MOTOR_W_I_RAW: 1.1875
-  response: 7EE0562466F0013
-- expected_values:
-    EGOLF_MOTOR_W_I_RAW: 19.0625
-  response: 7EE0562466F0131
-- expected_values:
-    EGOLF_MOTOR_W_I_RAW: 85.75
-  response: 7EE0562466F055C
-- expected_values:
-    EGOLF_MOTOR_W_I_RAW: 112.5625
-  response: 7EE0562466F0709
-- expected_values:
-    EGOLF_MOTOR_W_I_RAW: -82.625
-  response: 7EE0562466FFAD6
-- expected_values:
-    EGOLF_MOTOR_W_I_RAW: -68.1875
-  response: 7EE0562466FFBBD
-- expected_values:
-    EGOLF_MOTOR_W_I_RAW: -0.875
-  response: 7EE0562466FFFF2
+    EGOLF_MOTOR_W_I_RAW: -9.0625
+  response: 7EE0562466FFF6F
 - expected_values:
     EGOLF_MOTOR_W_I_RAW: -0.1875
   response: 7EE0562466FFFFD

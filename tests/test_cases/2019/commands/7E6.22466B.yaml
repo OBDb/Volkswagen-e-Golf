@@ -1,6 +1,12 @@
 command_id: 7E6.22466B
 test_cases:
 - expected_values:
+    EGOLF_PE_SUPPLY_V2: 4.99023
+  response: 7EE0562466B09FB
+- expected_values:
+    EGOLF_PE_SUPPLY_V2: 4.99414
+  response: 7EE0562466B09FD
+- expected_values:
     EGOLF_PE_SUPPLY_V2: 4.99609
   response: 7EE0562466B09FE
 - expected_values:
