@@ -1,8 +1,8 @@
 command_id: 7E6.22465C
 test_cases:
 - expected_values:
-    EGOLF_PE_DCDC_KL30_V: 12.33008
-  response: 7EE0562465C18A9
+    EGOLF_PE_DCDC_KL30_V: 12.22461
+  response: 7EE0562465C1873
 - expected_values:
     EGOLF_PE_DCDC_KL30_V: 12.45312
   response: 7EE0562465C18E8
