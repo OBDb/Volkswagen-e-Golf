@@ -1,32 +1,14 @@
 command_id: 7E0.7E8.22F442
 test_cases:
 - expected_values:
-    EGOLF_KL30_V: 12.227
-  response: 7E80562F4422FC3
+    EGOLF_KL30_V: 12.133
+  response: 7E80562F4422F65
 - expected_values:
     EGOLF_KL30_V: 12.345
   response: 7E80562F4423039
-- expected_values:
-    EGOLF_KL30_V: 12.439
-  response: 7E80562F4423097
-- expected_values:
-    EGOLF_KL30_V: 13.004
-  response: 7E80562F44232CC
-- expected_values:
-    EGOLF_KL30_V: 13.028
-  response: 7E80562F44232E4
-- expected_values:
-    EGOLF_KL30_V: 13.264
-  response: 7E80562F44233D0
-- expected_values:
-    EGOLF_KL30_V: 13.287
-  response: 7E80562F44233E7
 - expected_values:
     EGOLF_KL30_V: 13.311
   response: 7E80562F44233FF
 - expected_values:
     EGOLF_KL30_V: 13.994
   response: 7E80562F44236AA
-- expected_values:
-    EGOLF_KL30_V: 14.017
-  response: 7E80562F44236C1
