@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.22F446
 test_cases:
 - expected_values:
+    EGOLF_AAT: 21
+  response: 7E80462F4463D
+- expected_values:
     EGOLF_AAT: 22
   response: 7E80462F4463E
 - expected_values:

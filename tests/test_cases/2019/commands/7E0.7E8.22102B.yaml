@@ -7,8 +7,8 @@ test_cases:
     EGOLF_APP_V2: 560.2
   response: 7E80562102B0AF1
 - expected_values:
-    EGOLF_APP_V2: 820.4
-  response: 7E80562102B1006
+    EGOLF_APP_V2: 717.8
+  response: 7E80562102B0E05
 - expected_values:
     EGOLF_APP_V2: 1197.6
   response: 7E80562102B1764
