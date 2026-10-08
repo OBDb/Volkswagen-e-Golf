@@ -4,6 +4,9 @@ test_cases:
     EGOLF_HV_INTERLOCK_SRC_I: 7.85938
   response: 7ED056274BC1F70
 - expected_values:
+    EGOLF_HV_INTERLOCK_SRC_I: 7.86035
+  response: 7ED056274BC1F71
+- expected_values:
     EGOLF_HV_INTERLOCK_SRC_I: 7.86133
   response: 7ED056274BC1F72
 - expected_values:
