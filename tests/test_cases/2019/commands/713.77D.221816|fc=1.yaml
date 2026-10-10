@@ -2,6 +2,13 @@ command_id: 713.77D.221816|fc=1
 test_cases:
 - expected_values:
     EGOLF_AIR_GAB_VACUUM_SNS: 0
+    EGOLF_BRAKE_P_SNS: 0
+  response: |-
+    77D100E621816000000
+    77D21FFFFFFFFFFFFFF
+    77D22FFAAAAAAAAAAAA
+- expected_values:
+    EGOLF_AIR_GAB_VACUUM_SNS: 0
     EGOLF_BRAKE_P_SNS: 0.2
   response: |-
     77D100E621816000014
@@ -19,6 +26,13 @@ test_cases:
     EGOLF_BRAKE_P_SNS: 0.4
   response: |-
     77D100E621816000028
+    77D21FFFFFFFFFFFFFF
+    77D22FFAAAAAAAAAAAA
+- expected_values:
+    EGOLF_AIR_GAB_VACUUM_SNS: 0
+    EGOLF_BRAKE_P_SNS: 0
+  response: |-
+    77D100E62181600FFC4
     77D21FFFFFFFFFFFFFF
     77D22FFAAAAAAAAAAAA
 - expected_values:
