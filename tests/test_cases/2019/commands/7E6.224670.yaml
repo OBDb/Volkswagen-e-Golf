@@ -4,8 +4,8 @@ test_cases:
     EGOLF_MOTOR_V_I_RAW: 0
   response: 7EE056246700000
 - expected_values:
-    EGOLF_MOTOR_V_I_RAW: -2.0625
-  response: 7EE05624670FFDF
+    EGOLF_MOTOR_V_I_RAW: -3.4375
+  response: 7EE05624670FFC9
 - expected_values:
     EGOLF_MOTOR_V_I_RAW: -0.6875
   response: 7EE05624670FFF5

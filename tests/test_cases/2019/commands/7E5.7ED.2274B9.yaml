@@ -13,5 +13,17 @@ test_cases:
     EGOLF_HV_INTERLOCK_DET_V: 0.50031
   response: 7ED056274B90667
 - expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.50092
+  response: 7ED056274B90669
+- expected_values:
     EGOLF_HV_INTERLOCK_DET_V: 0.50122
   response: 7ED056274B9066A
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.50183
+  response: 7ED056274B9066C
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.50214
+  response: 7ED056274B9066D
+- expected_values:
+    EGOLF_HV_INTERLOCK_DET_V: 0.50244
+  response: 7ED056274B9066E
