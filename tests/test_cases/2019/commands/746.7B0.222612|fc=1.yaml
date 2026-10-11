@@ -4,5 +4,5 @@ test_cases:
     EGOLF_CLIMATE_T_AFTER_EVAP: 1.332
   response: 7B00462261204
 - expected_values:
-    EGOLF_CLIMATE_T_AFTER_EVAP: 16.65
-  response: 7B00462261232
+    EGOLF_CLIMATE_T_AFTER_EVAP: 18.648
+  response: 7B00462261238

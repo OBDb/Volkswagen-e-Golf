@@ -7,5 +7,5 @@ test_cases:
     EGOLF_HVBAT_CELL_57_V: 0.74976
   response: 7ED05621E780BFF
 - expected_values:
-    EGOLF_HVBAT_CELL_57_V: 0.75049
-  response: 7ED05621E780C02
+    EGOLF_HVBAT_CELL_57_V: 0.75024
+  response: 7ED05621E780C01
