@@ -7,5 +7,5 @@ test_cases:
     EGOLF_PE_BMS_HV_I: 31.5
   response: 7EE0562465F01F8
 - expected_values:
-    EGOLF_PE_BMS_HV_I: -2.5
-  response: 7EE0562465FFFD8
+    EGOLF_PE_BMS_HV_I: -16
+  response: 7EE0562465FFF00

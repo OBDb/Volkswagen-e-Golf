@@ -339,7 +339,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "149A"}, "freq": 0.25, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "EGOLF_MOTOR_RPM_ECM", "path": "Engine", "fmt": { "len": 16, "max": 16383.749, "div": 4, "unit": "rpm" }, "name": "Drive motor speed"}
+    {"id": "EGOLF_MOTOR_RPM_ECM", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Drive motor speed"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "149B"}, "freq": 5,
   "signals": [
@@ -997,7 +997,7 @@
   ]},
 { "hdr": "7E6", "cmd": {"22": "3E97"}, "freq": 0.25, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
-    {"id": "EGOLF_MOTOR_RPM", "path": "Engine", "fmt": { "len": 16, "max": 16383.749, "div": 4, "unit": "rpm" }, "name": "Drive motor speed, actual", "suggestedMetric": "engineSpeed"}
+    {"id": "EGOLF_MOTOR_RPM", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Drive motor speed, actual", "suggestedMetric": "engineSpeed"}
   ]},
 { "hdr": "7E6", "dbg": true, "cmd": {"22": "3EB5"}, "freq": 5,
   "signals": [
