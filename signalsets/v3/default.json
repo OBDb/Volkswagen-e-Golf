@@ -485,7 +485,7 @@
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E3D"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [
-    {"id": "EGOLF_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 200, "min": -200, "div": 4, "add": -511, "unit": "amps" }, "name": "HV battery current"}
+    {"id": "EGOLF_HVBAT_CURRENT", "path": "Battery", "fmt": { "len": 16, "max": 200, "min": -200, "mul": -1, "div": 4, "add": 512, "unit": "amps" }, "name": "HV battery current"}
   ]},
 { "hdr": "7E5", "rax": "7ED", "cmd": {"22": "1E40"}, "freq": 30, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
