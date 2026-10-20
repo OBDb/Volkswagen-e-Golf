@@ -1,7 +1,7 @@
 model_year: 2018
 supported_commands_by_ecu:
   "710":
-  - 710.77A.222AB2|fc=1:EGOLF_HVBAT_CAP
+  - 710.77A.222AB2|fc=1,f=2017-:EGOLF_HVBAT_CAP
   - 710.77A.222AB8|fc=1:EGOLF_HVBAT_KWH
   "714":
   - 714.77E.222203:EGOLF_ODO

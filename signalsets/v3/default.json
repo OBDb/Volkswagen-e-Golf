@@ -31,9 +31,13 @@
   "signals": [
     {"id": "EGOLF_BAT_V_AT_REST", "path": "Battery", "fmt": { "len": 8, "max": 34.5, "min": 9, "div": 10, "add": 9, "unit": "volts" }, "name": "Battery voltage at rest"}
   ]},
-{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB2"}, "freq": 86400, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
+{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB2"}, "freq": 86400, "filter": { "to": 2016 }, "dbgfilter": { "to": 2015 },
   "signals": [
-    {"id": "EGOLF_HVBAT_CAP", "path": "Battery", "fmt": { "len": 32, "max": 3276, "div": 1310770, "unit": "kilowattHours" }, "name": "HV battery capacity", "description": "Total possible energy in the high voltage battery"}
+    {"id": "EGOLF_HVBAT_CAP_24KWH", "path": "Battery", "fmt": { "len": 16, "max": 3276.75, "mul": 50, "div": 1000, "unit": "kilowattHours" }, "name": "HV battery capacity", "description": "Total possible energy in the high voltage battery"}
+  ]},
+{ "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB2"}, "freq": 86400, "filter": { "from": 2017 }, "dbgfilter": { "from": 2020 },
+  "signals": [
+    {"id": "EGOLF_HVBAT_CAP", "path": "Battery", "fmt": { "len": 16, "max": 131.07, "mul": 2, "div": 1000, "unit": "kilowattHours" }, "name": "HV battery capacity", "description": "Total possible energy in the high voltage battery"}
   ]},
 { "hdr": "710", "rax": "77A", "fcm1": true, "cmd": {"22": "2AB8"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2020 },
   "signals": [

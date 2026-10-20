@@ -1,20 +1,20 @@
-command_id: 710.77A.222AB2|fc=1
+command_id: 710.77A.222AB2|fc=1,f=2017-
 test_cases:
 - expected_values:
-    EGOLF_HVBAT_CAP: 576.07881
+    EGOLF_HVBAT_CAP: 23.044
   response: 77A07622AB22D020400
 - expected_values:
-    EGOLF_HVBAT_CAP: 665.67539
+    EGOLF_HVBAT_CAP: 26.628
   response: 77A07622AB234020400
 - expected_values:
-    EGOLF_HVBAT_CAP: 793.67051
+    EGOLF_HVBAT_CAP: 31.748
   response: 77A07622AB23E020400
 - expected_values:
-    EGOLF_HVBAT_CAP: 844.86855
+    EGOLF_HVBAT_CAP: 33.796
   response: 77A07622AB242020400
 - expected_values:
-    EGOLF_HVBAT_CAP: 857.66806
+    EGOLF_HVBAT_CAP: 34.308
   response: 77A07622AB243020400
 - expected_values:
-    EGOLF_HVBAT_CAP: 921.66562
+    EGOLF_HVBAT_CAP: 36.868
   response: 77A07622AB248020400
