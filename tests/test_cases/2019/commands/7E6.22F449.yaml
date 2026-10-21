@@ -1,8 +1,8 @@
 command_id: 7E6.22F449
 test_cases:
 - expected_values:
-    EGOLF_APP_PE: 15.29412
-  response: 7EE0462F44927
+    EGOLF_APP_PE: 14.90196
+  response: 7EE0462F44926
 - expected_values:
     EGOLF_APP_PE: 40.78431
   response: 7EE0462F44968

@@ -1,6 +1,9 @@
 command_id: 746.7B0.222613|fc=1
 test_cases:
 - expected_values:
+    EGOLF_CABIN_T: 23.2
+  response: 7B00562261300E8
+- expected_values:
     EGOLF_CABIN_T: 25.5
   response: 7B00562261300FF
 - expected_values:
