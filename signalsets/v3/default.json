@@ -1,4 +1,9 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "710", "type": "gateway" },
+    { "hdr": "715", "type": "airbag" },
+    { "hdr": "746", "type": "hvac" }
+  ],
+  "commands": [
 { "hdr": "70E", "rax": "778", "fcm1": true, "cmd": {"22": "1945"}, "freq": 2, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "EGOLF_HEATER_FOR_NOZZLES_ACTIVE", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Heater for nozzles active"}

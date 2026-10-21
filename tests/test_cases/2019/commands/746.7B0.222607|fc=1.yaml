@@ -4,6 +4,9 @@ test_cases:
     EGOLF_CLIMATE_RAD_FAN_CMD_DUTY: 0
   response: 7B00462260700
 - expected_values:
+    EGOLF_CLIMATE_RAD_FAN_CMD_DUTY: 21.2
+  response: 7B00462260735
+- expected_values:
     EGOLF_CLIMATE_RAD_FAN_CMD_DUTY: 22.8
   response: 7B00462260739
 - expected_values:

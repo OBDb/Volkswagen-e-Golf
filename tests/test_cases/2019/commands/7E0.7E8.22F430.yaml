@@ -1,5 +1,8 @@
 command_id: 7E0.7E8.22F430
 test_cases:
 - expected_values:
+    EGOLF_WARM_UPS: 1
+  response: 7E80462F43001
+- expected_values:
     EGOLF_WARM_UPS: 255
   response: 7E80462F430FF

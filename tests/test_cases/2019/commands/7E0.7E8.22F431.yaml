@@ -1,5 +1,11 @@
 command_id: 7E0.7E8.22F431
 test_cases:
 - expected_values:
+    EGOLF_CLR_DIST: 43
+  response: 7E80562F431002B
+- expected_values:
+    EGOLF_CLR_DIST: 48
+  response: 7E80562F4310030
+- expected_values:
     EGOLF_CLR_DIST: 65535
   response: 7E80562F431FFFF
