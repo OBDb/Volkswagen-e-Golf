@@ -1,6 +1,12 @@
 command_id: 710.77A.222A0C|fc=1
 test_cases:
 - expected_values:
+    EGOLF_BAT_SOC: 70
+  response: 77A04622A0C46
+- expected_values:
+    EGOLF_BAT_SOC: 71
+  response: 77A04622A0C47
+- expected_values:
     EGOLF_BAT_SOC: 75
   response: 77A04622A0C4B
 - expected_values:
