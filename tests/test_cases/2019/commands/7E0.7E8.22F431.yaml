@@ -7,5 +7,11 @@ test_cases:
     EGOLF_CLR_DIST: 48
   response: 7E80562F4310030
 - expected_values:
+    EGOLF_CLR_DIST: 252
+  response: 7E80562F43100FC
+- expected_values:
+    EGOLF_CLR_DIST: 259
+  response: 7E80562F4310103
+- expected_values:
     EGOLF_CLR_DIST: 65535
   response: 7E80562F431FFFF
