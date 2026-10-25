@@ -1,0 +1,17 @@
+command_id: 7E0.7E8.22F446
+test_cases:
+- expected_values:
+    EGOLF_AAT: 9
+  response: 7E80462F44631
+- expected_values:
+    EGOLF_AAT: 10
+  response: 7E80462F44632
+- expected_values:
+    EGOLF_AAT: 11
+  response: 7E80462F44633
+- expected_values:
+    EGOLF_AAT: 12
+  response: 7E80462F44634
+- expected_values:
+    EGOLF_AAT: 215
+  response: 7E80462F446FF

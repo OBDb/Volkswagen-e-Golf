@@ -1,0 +1,8 @@
+command_id: 710.77A.222A0E|fc=1
+test_cases:
+- expected_values:
+    EGOLF_BAT_INT_R: 7.2
+  response: 77A04622A0E24
+- expected_values:
+    EGOLF_BAT_INT_R: 7.4
+  response: 77A04622A0E25

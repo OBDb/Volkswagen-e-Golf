@@ -1,0 +1,11 @@
+command_id: 7E6.22464F
+test_cases:
+- expected_values:
+    EGOLF_DCDC_PWR_T: 9.78125
+  response: 7EE0562464F0272
+- expected_values:
+    EGOLF_DCDC_PWR_T: 15.9375
+  response: 7EE0562464F03FC
+- expected_values:
+    EGOLF_DCDC_PWR_T: 16.01562
+  response: 7EE0562464F0401

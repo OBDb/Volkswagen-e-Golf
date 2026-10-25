@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.221165
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_T_LOAD: 0
+  response: '7E8056211650000'

@@ -1,0 +1,26 @@
+command_id: 7E0.7E8.22F431
+test_cases:
+- expected_values:
+    EGOLF_CLR_DIST: 36755
+  response: 7E80562F4318F93
+- expected_values:
+    EGOLF_CLR_DIST: 36756
+  response: 7E80562F4318F94
+- expected_values:
+    EGOLF_CLR_DIST: 36757
+  response: 7E80562F4318F95
+- expected_values:
+    EGOLF_CLR_DIST: 36758
+  response: 7E80562F4318F96
+- expected_values:
+    EGOLF_CLR_DIST: 36759
+  response: 7E80562F4318F97
+- expected_values:
+    EGOLF_CLR_DIST: 36760
+  response: 7E80562F4318F98
+- expected_values:
+    EGOLF_CLR_DIST: 36761
+  response: 7E80562F4318F99
+- expected_values:
+    EGOLF_CLR_DIST: 36762
+  response: 7E80562F4318F9A

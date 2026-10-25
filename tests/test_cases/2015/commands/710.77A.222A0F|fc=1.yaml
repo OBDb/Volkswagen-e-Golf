@@ -1,0 +1,26 @@
+command_id: 710.77A.222A0F|fc=1
+test_cases:
+- expected_values:
+    EGOLF_USE_BAT_CHG: 8
+  response: 77A04622A0F08
+- expected_values:
+    EGOLF_USE_BAT_CHG: 9
+  response: 77A04622A0F09
+- expected_values:
+    EGOLF_USE_BAT_CHG: 10
+  response: 77A04622A0F0A
+- expected_values:
+    EGOLF_USE_BAT_CHG: 11
+  response: 77A04622A0F0B
+- expected_values:
+    EGOLF_USE_BAT_CHG: 12
+  response: 77A04622A0F0C
+- expected_values:
+    EGOLF_USE_BAT_CHG: 13
+  response: 77A04622A0F0D
+- expected_values:
+    EGOLF_USE_BAT_CHG: 14
+  response: 77A04622A0F0E
+- expected_values:
+    EGOLF_USE_BAT_CHG: 15
+  response: 77A04622A0F0F

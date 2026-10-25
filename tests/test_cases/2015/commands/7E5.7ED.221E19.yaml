@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.221E19
+test_cases:
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4490
+  response: 7ED05621E1901C1
+- expected_values:
+    EGOLF_HV_ISO_NEG_SYS: 4760
+  response: 7ED05621E1901DC

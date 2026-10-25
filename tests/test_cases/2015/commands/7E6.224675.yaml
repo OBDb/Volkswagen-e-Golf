@@ -1,0 +1,11 @@
+command_id: 7E6.224675
+test_cases:
+- expected_values:
+    EGOLF_PE_HV_V: 5.40625
+  response: 7EE0562467500AD
+- expected_values:
+    EGOLF_PE_HV_V: 343.625
+  response: 7EE056246752AF4
+- expected_values:
+    EGOLF_PE_HV_V: 344.0625
+  response: 7EE056246752B02

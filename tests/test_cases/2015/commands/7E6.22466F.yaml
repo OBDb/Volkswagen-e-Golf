@@ -1,0 +1,11 @@
+command_id: 7E6.22466F
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_W_I_RAW: 0.25
+  response: 7EE0562466F0004
+- expected_values:
+    EGOLF_MOTOR_W_I_RAW: -10.6875
+  response: 7EE0562466FFF55
+- expected_values:
+    EGOLF_MOTOR_W_I_RAW: -0.125
+  response: 7EE0562466FFFFE

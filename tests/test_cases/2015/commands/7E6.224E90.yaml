@@ -1,0 +1,23 @@
+command_id: 7E6.224E90
+test_cases:
+- expected_values:
+    EGOLF_ROTOR_SIN_AMP_V: 1.09961
+  response: 7EE05624E900233
+- expected_values:
+    EGOLF_ROTOR_SIN_AMP_V: 1.27539
+  response: 7EE05624E90028D
+- expected_values:
+    EGOLF_ROTOR_SIN_AMP_V: 1.2793
+  response: 7EE05624E90028F
+- expected_values:
+    EGOLF_ROTOR_SIN_AMP_V: 1.28125
+  response: 7EE05624E900290
+- expected_values:
+    EGOLF_ROTOR_SIN_AMP_V: 1.2832
+  response: 7EE05624E900291
+- expected_values:
+    EGOLF_ROTOR_SIN_AMP_V: 1.28516
+  response: 7EE05624E900292
+- expected_values:
+    EGOLF_ROTOR_SIN_AMP_V: 1.28906
+  response: 7EE05624E900294

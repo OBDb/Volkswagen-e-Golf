@@ -1,0 +1,29 @@
+command_id: 7E6.224E91
+test_cases:
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.09961
+  response: 7EE05624E910233
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.29883
+  response: 7EE05624E910299
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.30078
+  response: 7EE05624E91029A
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.30273
+  response: 7EE05624E91029B
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.30469
+  response: 7EE05624E91029C
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.30664
+  response: 7EE05624E91029D
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.30859
+  response: 7EE05624E91029E
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.31055
+  response: 7EE05624E91029F
+- expected_values:
+    EGOLF_ROTOR_COS_AMP_V: 1.31641
+  response: 7EE05624E9102A2

@@ -1,0 +1,23 @@
+command_id: 714.77E.222203
+test_cases:
+- expected_values:
+    EGOLF_ODO: 51652
+  response: 77E0662220300C9C4
+- expected_values:
+    EGOLF_ODO: 51653
+  response: 77E0662220300C9C5
+- expected_values:
+    EGOLF_ODO: 51654
+  response: 77E0662220300C9C6
+- expected_values:
+    EGOLF_ODO: 51655
+  response: 77E0662220300C9C7
+- expected_values:
+    EGOLF_ODO: 51656
+  response: 77E0662220300C9C8
+- expected_values:
+    EGOLF_ODO: 51657
+  response: 77E0662220300C9C9
+- expected_values:
+    EGOLF_ODO: 51658
+  response: 77E0662220300C9CA

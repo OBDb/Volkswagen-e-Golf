@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22149A
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_RPM_ECM: 0
+  response: 7E80562149A0000
+- expected_values:
+    EGOLF_MOTOR_RPM_ECM: 762
+  response: 7E80562149A02FA
+- expected_values:
+    EGOLF_MOTOR_RPM_ECM: -534
+  response: 7E80562149AFDEA

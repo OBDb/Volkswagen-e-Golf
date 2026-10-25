@@ -1,0 +1,11 @@
+command_id: 7E5.7ED.221E86
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_CELL_71_V: 3.88477
+  response: 7ED05621E863E28
+- expected_values:
+    EGOLF_HVBAT_CELL_71_V: 3.93091
+  response: 7ED05621E863EE5
+- expected_values:
+    EGOLF_HVBAT_CELL_71_V: 3.94385
+  response: 7ED05621E863F1A

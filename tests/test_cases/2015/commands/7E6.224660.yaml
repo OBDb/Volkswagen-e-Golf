@@ -1,0 +1,14 @@
+command_id: 7E6.224660
+test_cases:
+- expected_values:
+    EGOLF_ROTOR_SIN: 16000
+  response: 7EE056246603E80
+- expected_values:
+    EGOLF_ROTOR_SIN: 16624
+  response: 7EE0562466040F0
+- expected_values:
+    EGOLF_ROTOR_SIN: 16640
+  response: 7EE056246604100
+- expected_values:
+    EGOLF_ROTOR_SIN: 49648
+  response: 7EE05624660C1F0

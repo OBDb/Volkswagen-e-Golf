@@ -1,0 +1,18 @@
+command_id: 7E5.7ED.221E0E
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_T_MAX: 11
+    EGOLF_HVBAT_T_MAX_NO: 1
+  response: 7ED07621E0E02C00001
+- expected_values:
+    EGOLF_HVBAT_T_MAX: 11.5
+    EGOLF_HVBAT_T_MAX_NO: 1
+  response: 7ED07621E0E02E00001
+- expected_values:
+    EGOLF_HVBAT_T_MAX: 11.5
+    EGOLF_HVBAT_T_MAX_NO: 24
+  response: 7ED07621E0E02E00018
+- expected_values:
+    EGOLF_HVBAT_T_MAX: 12
+    EGOLF_HVBAT_T_MAX_NO: 1
+  response: 7ED07621E0E03000001

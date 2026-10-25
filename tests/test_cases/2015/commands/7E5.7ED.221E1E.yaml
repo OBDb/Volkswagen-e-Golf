@@ -1,0 +1,23 @@
+command_id: 7E5.7ED.221E1E
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM_PRED: 1
+  response: 7ED05621E1E0131
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM_PRED: 1
+  response: 7ED05621E1E0132
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM_PRED: 1
+  response: 7ED05621E1E0133
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM_PRED: 1
+  response: 7ED05621E1E0134
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM_PRED: 1
+  response: 7ED05621E1E0135
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM_PRED: 1
+  response: 7ED05621E1E0136
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM_PRED: 1
+  response: 7ED05621E1E0137

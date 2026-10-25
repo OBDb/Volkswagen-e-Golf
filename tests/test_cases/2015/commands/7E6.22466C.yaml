@@ -1,0 +1,11 @@
+command_id: 7E6.22466C
+test_cases:
+- expected_values:
+    EGOLF_PE_SUPPLY_V1: 4.99023
+  response: 7EE0562466C09FB
+- expected_values:
+    EGOLF_PE_SUPPLY_V1: 4.99219
+  response: 7EE0562466C09FC
+- expected_values:
+    EGOLF_PE_SUPPLY_V1: 4.99414
+  response: 7EE0562466C09FD

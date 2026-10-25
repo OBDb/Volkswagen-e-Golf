@@ -1,0 +1,18 @@
+command_id: 7E5.7ED.221E33
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MAX: 3.8728
+    EGOLF_HVBAT_CELL_V_MAX_NO: 76
+  response: 7ED07621E333DF7004C
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MAX: 3.90283
+    EGOLF_HVBAT_CELL_V_MAX_NO: 85
+  response: 7ED07621E333E720055
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MAX: 3.90771
+    EGOLF_HVBAT_CELL_V_MAX_NO: 65
+  response: 7ED07621E333E860041
+- expected_values:
+    EGOLF_HVBAT_CELL_V_MAX: 3.94507
+    EGOLF_HVBAT_CELL_V_MAX_NO: 83
+  response: 7ED07621E333F1F0053
