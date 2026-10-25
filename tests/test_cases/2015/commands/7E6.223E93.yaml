@@ -1,0 +1,11 @@
+command_id: 7E6.223E93
+test_cases:
+- expected_values:
+    EGOLF_PE_LINK_V: 5.53125
+  response: 7EE05623E9300B1
+- expected_values:
+    EGOLF_PE_LINK_V: 343.40625
+  response: 7EE05623E932AED
+- expected_values:
+    EGOLF_PE_LINK_V: 344.0625
+  response: 7EE05623E932B02

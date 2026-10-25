@@ -1,0 +1,11 @@
+command_id: 7E6.220308
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: 0
+  response: 7EE056203080000
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: -9.9375
+  response: 7EE05620308FF61
+- expected_values:
+    EGOLF_MOTOR_TQ_CALC: -0.0625
+  response: 7EE05620308FFFF

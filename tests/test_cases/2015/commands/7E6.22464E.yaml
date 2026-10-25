@@ -1,0 +1,14 @@
+command_id: 7E6.22464E
+test_cases:
+- expected_values:
+    EGOLF_DCDC_PCB_T: 18
+  response: 7EE0562464E0480
+- expected_values:
+    EGOLF_DCDC_PCB_T: 36
+  response: 7EE0562464E0900
+- expected_values:
+    EGOLF_DCDC_PCB_T: 39.75
+  response: 7EE0562464E09F0
+- expected_values:
+    EGOLF_DCDC_PCB_T: 40
+  response: 7EE0562464E0A00

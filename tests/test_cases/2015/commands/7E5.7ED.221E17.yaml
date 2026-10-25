@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.221E17
+test_cases:
+- expected_values:
+    EGOLF_HV_ISO_POS_SYS: 4090
+  response: 7ED05621E170199
+- expected_values:
+    EGOLF_HV_ISO_POS_SYS: 4290
+  response: 7ED05621E1701AD

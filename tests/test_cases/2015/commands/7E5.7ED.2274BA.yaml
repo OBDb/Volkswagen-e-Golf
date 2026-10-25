@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.2274BA
+test_cases:
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_V: 2.12332
+  response: 7ED056274BA1B2C
+- expected_values:
+    EGOLF_HV_INTERLOCK_SRC_V: 2.12973
+  response: 7ED056274BA1B41

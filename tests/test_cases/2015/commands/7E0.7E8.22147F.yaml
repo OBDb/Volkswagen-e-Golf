@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22147F
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_TQ: 0
+  response: 7E80562147F0000
+- expected_values:
+    EGOLF_MOTOR_TQ: 170
+  response: 7E80562147F01FE
+- expected_values:
+    EGOLF_MOTOR_TQ: -1
+  response: 7E80562147FFFFD

@@ -1,0 +1,11 @@
+command_id: 7E6.223EFB
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_W_I: 0.25
+  response: 7EE05623EFB0004
+- expected_values:
+    EGOLF_MOTOR_W_I: -16
+  response: 7EE05623EFBFF00
+- expected_values:
+    EGOLF_MOTOR_W_I: -0.125
+  response: 7EE05623EFBFFFE

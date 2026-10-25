@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.222A0B
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_T: 10.20312
+  response: 7ED05622A0B028D
+- expected_values:
+    EGOLF_HVBAT_T: 11.10938
+  response: 7ED05622A0B02C7

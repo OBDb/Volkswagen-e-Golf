@@ -1,0 +1,11 @@
+command_id: 7E6.224656
+test_cases:
+- expected_values:
+    EGOLF_MOTOR_PWR_PE: 0
+  response: 7EE056246560000
+- expected_values:
+    EGOLF_MOTOR_PWR_PE: -0.39062
+  response: 7EE05624656FFE7
+- expected_values:
+    EGOLF_MOTOR_PWR_PE: -0.01562
+  response: 7EE05624656FFFF

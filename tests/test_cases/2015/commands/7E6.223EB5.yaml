@@ -1,0 +1,11 @@
+command_id: 7E6.223EB5
+test_cases:
+- expected_values:
+    EGOLF_PE_DCDC_T: 9.78125
+  response: 7EE05623EB50272
+- expected_values:
+    EGOLF_PE_DCDC_T: 15.98438
+  response: 7EE05623EB503FF
+- expected_values:
+    EGOLF_PE_DCDC_T: 16.14062
+  response: 7EE05623EB50409

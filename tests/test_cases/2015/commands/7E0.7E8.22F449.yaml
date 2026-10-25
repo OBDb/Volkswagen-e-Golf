@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22F449
+test_cases:
+- expected_values:
+    EGOLF_APP1: 14.90196
+  response: 7E80462F44926
+- expected_values:
+    EGOLF_APP1: 43.52941
+  response: 7E80462F4496F

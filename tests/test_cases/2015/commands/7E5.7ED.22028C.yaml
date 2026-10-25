@@ -1,0 +1,8 @@
+command_id: 7E5.7ED.22028C
+test_cases:
+- expected_values:
+    EGOLF_HVBAT_SOC: 80
+  response: 7ED0462028CCC
+- expected_values:
+    EGOLF_HVBAT_SOC: 89.80392
+  response: 7ED0462028CE5

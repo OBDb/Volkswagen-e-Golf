@@ -1,0 +1,26 @@
+command_id: 713.77D.221803|fc=1
+test_cases:
+- expected_values:
+    EGOLF_RR_VSS_V2: 0
+  response: |-
+    77D100E621803000080
+    77D210000FFFEFFFEFF
+    77D22FEAAAAAAAAAAAA
+- expected_values:
+    EGOLF_RR_VSS_V2: 11.2
+  response: |-
+    77D100E621803007080
+    77D2100000000000000
+    77D2200AAAAAAAAAAAA
+- expected_values:
+    EGOLF_RR_VSS_V2: 50.1
+  response: |-
+    77D100E62180301F580
+    77D2100000000000000
+    77D2200AAAAAAAAAAAA
+- expected_values:
+    EGOLF_RR_VSS_V2: 51.9
+  response: |-
+    77D100E621803020780
+    77D2100000000000000
+    77D2200AAAAAAAAAAAA

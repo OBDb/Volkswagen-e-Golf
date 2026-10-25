@@ -1,0 +1,14 @@
+command_id: 7E6.224664
+test_cases:
+- expected_values:
+    EGOLF_PE_IGBT_U_T: 9.14062
+  response: 7EE056246640249
+- expected_values:
+    EGOLF_PE_IGBT_U_T: 15.95312
+  response: 7EE0562466403FD
+- expected_values:
+    EGOLF_PE_IGBT_U_T: 20.15625
+  response: 7EE05624664050A
+- expected_values:
+    EGOLF_PE_IGBT_U_T: 24.46875
+  response: 7EE05624664061E

@@ -1,0 +1,14 @@
+command_id: 7E6.224E93
+test_cases:
+- expected_values:
+    EGOLF_ROTOR_COS_OFS_V: 2.49023
+  response: 7EE05624E9304FB
+- expected_values:
+    EGOLF_ROTOR_COS_OFS_V: 2.49219
+  response: 7EE05624E9304FC
+- expected_values:
+    EGOLF_ROTOR_COS_OFS_V: 2.49414
+  response: 7EE05624E9304FD
+- expected_values:
+    EGOLF_ROTOR_COS_OFS_V: 2.5
+  response: 7EE05624E930500

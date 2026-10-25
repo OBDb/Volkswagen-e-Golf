@@ -1,0 +1,20 @@
+command_id: 7E6.22465C
+test_cases:
+- expected_values:
+    EGOLF_PE_DCDC_KL30_V: 12.21875
+  response: 7EE0562465C1870
+- expected_values:
+    EGOLF_PE_DCDC_KL30_V: 12.4375
+  response: 7EE0562465C18E0
+- expected_values:
+    EGOLF_PE_DCDC_KL30_V: 14.71875
+  response: 7EE0562465C1D70
+- expected_values:
+    EGOLF_PE_DCDC_KL30_V: 15.03125
+  response: 7EE0562465C1E10
+- expected_values:
+    EGOLF_PE_DCDC_KL30_V: 15.0625
+  response: 7EE0562465C1E20
+- expected_values:
+    EGOLF_PE_DCDC_KL30_V: 15.09375
+  response: 7EE0562465C1E30
