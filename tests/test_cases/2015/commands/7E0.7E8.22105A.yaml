@@ -1,11 +1,8 @@
 command_id: 7E0.7E8.22105A
 test_cases:
 - expected_values:
-    EGOLF_BAT_V: 12120
-  response: 7E80562105A025E
-- expected_values:
-    EGOLF_BAT_V: 12600
-  response: 7E80562105A0276
+    EGOLF_BAT_V: 12000
+  response: 7E80562105A0258
 - expected_values:
     EGOLF_BAT_V: 15000
   response: 7E80562105A02EE
