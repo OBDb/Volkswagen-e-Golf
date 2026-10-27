@@ -1,8 +1,8 @@
 command_id: 7E5.7ED.221E3D
 test_cases:
 - expected_values:
-    EGOLF_HVBAT_CURRENT: 131.5
-  response: 7ED05621E3D05F2
+    EGOLF_HVBAT_CURRENT: 187.75
+  response: 7ED05621E3D0511
 - expected_values:
     EGOLF_HVBAT_CURRENT: 0.75
   response: 7ED05621E3D07FD
