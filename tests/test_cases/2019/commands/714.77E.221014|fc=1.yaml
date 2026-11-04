@@ -4,6 +4,9 @@ test_cases:
     EGOLF_DASH_AAT: 16.5
   response: '77E0462101485'
 - expected_values:
+    EGOLF_DASH_AAT: 17
+  response: '77E0462101486'
+- expected_values:
     EGOLF_DASH_AAT: 21
   response: 77E046210148E
 - expected_values:
