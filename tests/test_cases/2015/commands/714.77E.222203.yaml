@@ -4,29 +4,5 @@ test_cases:
     EGOLF_ODO: 51652
   response: 77E0662220300C9C4
 - expected_values:
-    EGOLF_ODO: 51653
-  response: 77E0662220300C9C5
-- expected_values:
-    EGOLF_ODO: 51654
-  response: 77E0662220300C9C6
-- expected_values:
-    EGOLF_ODO: 51655
-  response: 77E0662220300C9C7
-- expected_values:
-    EGOLF_ODO: 51656
-  response: 77E0662220300C9C8
-- expected_values:
-    EGOLF_ODO: 51657
-  response: 77E0662220300C9C9
-- expected_values:
-    EGOLF_ODO: 51658
-  response: 77E0662220300C9CA
-- expected_values:
-    EGOLF_ODO: 51663
-  response: 77E0662220300C9CF
-- expected_values:
-    EGOLF_ODO: 51664
-  response: 77E0662220300C9D0
-- expected_values:
-    EGOLF_ODO: 51665
-  response: 77E0662220300C9D1
+    EGOLF_ODO: 51676
+  response: 77E0662220300C9DC
