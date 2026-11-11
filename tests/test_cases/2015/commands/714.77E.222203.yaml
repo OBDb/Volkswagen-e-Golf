@@ -4,5 +4,5 @@ test_cases:
     EGOLF_ODO: 51652
   response: 77E0662220300C9C4
 - expected_values:
-    EGOLF_ODO: 51706
-  response: 77E0662220300C9FA
+    EGOLF_ODO: 51709
+  response: 77E0662220300C9FD
