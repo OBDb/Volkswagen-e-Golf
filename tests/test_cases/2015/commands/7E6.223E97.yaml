@@ -7,5 +7,5 @@ test_cases:
     EGOLF_MOTOR_RPM: 3583
   response: 7EE05623E970DFF
 - expected_values:
-    EGOLF_MOTOR_RPM: -249
-  response: 7EE05623E97FF07
+    EGOLF_MOTOR_RPM: -251
+  response: 7EE05623E97FF05
