@@ -4,8 +4,8 @@ test_cases:
     EGOLF_BAT_V: 11700
   response: 7E80562105A0249
 - expected_values:
-    EGOLF_BAT_V: 12000
-  response: 7E80562105A0258
+    EGOLF_BAT_V: 11960
+  response: 7E80562105A0256
 - expected_values:
     EGOLF_BAT_V: 15000
   response: 7E80562105A02EE
