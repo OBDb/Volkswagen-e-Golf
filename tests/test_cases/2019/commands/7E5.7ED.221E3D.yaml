@@ -4,11 +4,11 @@ test_cases:
     EGOLF_HVBAT_CURRENT: 188.25
   response: 7ED05621E3D050F
 - expected_values:
+    EGOLF_HVBAT_CURRENT: 64
+  response: 7ED05621E3D0700
+- expected_values:
     EGOLF_HVBAT_CURRENT: 0.5
   response: 7ED05621E3D07FE
-- expected_values:
-    EGOLF_HVBAT_CURRENT: 0
-  response: 7ED05621E3D0800
 - expected_values:
     EGOLF_HVBAT_CURRENT: -129.25
   response: 7ED05621E3D0A05
