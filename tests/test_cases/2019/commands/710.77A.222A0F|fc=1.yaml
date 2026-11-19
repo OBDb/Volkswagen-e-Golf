@@ -4,6 +4,9 @@ test_cases:
     EGOLF_USE_BAT_CHG: 16
   response: 77A04622A0F10
 - expected_values:
+    EGOLF_USE_BAT_CHG: 19
+  response: 77A04622A0F13
+- expected_values:
     EGOLF_USE_BAT_CHG: 22
   response: 77A04622A0F16
 - expected_values:

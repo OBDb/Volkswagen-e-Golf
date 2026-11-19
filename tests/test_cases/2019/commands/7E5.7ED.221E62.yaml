@@ -4,8 +4,8 @@ test_cases:
     EGOLF_HVBAT_CELL_35_V: 0.62988
   response: 7ED05621E620A14
 - expected_values:
-    EGOLF_HVBAT_CELL_35_V: 0.74829
-  response: 7ED05621E620BF9
+    EGOLF_HVBAT_CELL_35_V: 0.74927
+  response: 7ED05621E620BFD
 - expected_values:
     EGOLF_HVBAT_CELL_35_V: 0.75024
   response: 7ED05621E620C01

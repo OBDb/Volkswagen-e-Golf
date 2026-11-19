@@ -7,6 +7,9 @@ test_cases:
     EGOLF_HVBAT_CAP: 23.556
   response: 77A07622AB22E020400
 - expected_values:
+    EGOLF_HVBAT_CAP: 24.068
+  response: 77A07622AB22F020400
+- expected_values:
     EGOLF_HVBAT_CAP: 26.628
   response: 77A07622AB234020400
 - expected_values:
