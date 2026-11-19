@@ -9,3 +9,6 @@ test_cases:
 - expected_values:
     EGOLF_AUX_PWR: 736
   response: 7E80562107700B8
+- expected_values:
+    EGOLF_AUX_PWR: 1152
+  response: '7E8056210770120'

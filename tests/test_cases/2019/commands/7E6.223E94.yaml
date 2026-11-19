@@ -4,8 +4,8 @@ test_cases:
     EGOLF_MOTOR_T: 31.6875
   response: 7EE05623E9407EC
 - expected_values:
-    EGOLF_MOTOR_T: 31.76562
-  response: 7EE05623E9407F1
+    EGOLF_MOTOR_T: 35.96875
+  response: 7EE05623E9408FE
 - expected_values:
     EGOLF_MOTOR_T: 36
   response: 7EE05623E940900
