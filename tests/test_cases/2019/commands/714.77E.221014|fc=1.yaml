@@ -4,29 +4,5 @@ test_cases:
     EGOLF_DASH_AAT: 11.5
   response: 77E046210147B
 - expected_values:
-    EGOLF_DASH_AAT: 16.5
-  response: '77E0462101485'
-- expected_values:
-    EGOLF_DASH_AAT: 17
-  response: '77E0462101486'
-- expected_values:
-    EGOLF_DASH_AAT: 21
-  response: 77E046210148E
-- expected_values:
-    EGOLF_DASH_AAT: 21.5
-  response: 77E046210148F
-- expected_values:
-    EGOLF_DASH_AAT: 22
-  response: '77E0462101490'
-- expected_values:
-    EGOLF_DASH_AAT: 22.5
-  response: '77E0462101491'
-- expected_values:
-    EGOLF_DASH_AAT: 23
-  response: '77E0462101492'
-- expected_values:
-    EGOLF_DASH_AAT: 23.5
-  response: '77E0462101493'
-- expected_values:
     EGOLF_DASH_AAT: 24
   response: '77E0462101494'
