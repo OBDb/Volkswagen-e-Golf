@@ -7,5 +7,5 @@ test_cases:
     EGOLF_HV_ISO_NEG_SYS: 4670
   response: 7ED06621E1901D380
 - expected_values:
-    EGOLF_HV_ISO_NEG_SYS: 4780
-  response: 7ED06621E1901DE00
+    EGOLF_HV_ISO_NEG_SYS: 4870
+  response: 7ED06621E1901E700

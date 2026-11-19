@@ -1,6 +1,10 @@
 command_id: 7E5.7ED.221E33
 test_cases:
 - expected_values:
+    EGOLF_HVBAT_CELL_V_MAX: 3.58984
+    EGOLF_HVBAT_CELL_V_MAX_NO: 4
+  response: 7ED07621E3339700004
+- expected_values:
     EGOLF_HVBAT_CELL_V_MAX: 3.63281
     EGOLF_HVBAT_CELL_V_MAX_NO: 1
   response: 7ED07621E333A200001

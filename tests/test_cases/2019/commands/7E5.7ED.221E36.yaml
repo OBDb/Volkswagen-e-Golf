@@ -1,8 +1,8 @@
 command_id: 7E5.7ED.221E36
 test_cases:
 - expected_values:
-    EGOLF_HVBAT_POS_V_PRE: 165.03125
-  response: 7ED05621E3614A1
+    EGOLF_HVBAT_POS_V_PRE: 161.28125
+  response: 7ED05621E361429
 - expected_values:
     EGOLF_HVBAT_POS_V_PRE: 175.625
   response: 7ED05621E3615F4

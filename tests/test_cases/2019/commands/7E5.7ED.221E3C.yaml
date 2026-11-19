@@ -1,8 +1,8 @@
 command_id: 7E5.7ED.221E3C
 test_cases:
 - expected_values:
-    EGOLF_HVBAT_CELL_SUM_V: 1.23804
-  response: 7ED07621E3C0013CFDD
+    EGOLF_HVBAT_CELL_SUM_V: 1.23438
+  response: 7ED07621E3C0013C084
 - expected_values:
     EGOLF_HVBAT_CELL_SUM_V: 1.24805
   response: 7ED07621E3C0013F800

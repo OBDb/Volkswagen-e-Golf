@@ -1,8 +1,8 @@
 command_id: 7E5.7ED.2274BA
 test_cases:
 - expected_values:
-    EGOLF_HV_INTERLOCK_SRC_V: 2.14316
-  response: 7ED056274BA1B6D
+    EGOLF_HV_INTERLOCK_SRC_V: 2.13614
+  response: 7ED056274BA1B56
 - expected_values:
     EGOLF_HV_INTERLOCK_SRC_V: 2.14927
   response: 7ED056274BA1B81

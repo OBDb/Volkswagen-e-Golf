@@ -1,8 +1,8 @@
 command_id: 7E6.22466E
 test_cases:
 - expected_values:
-    EGOLF_PE_BMS_HV_V: 316.25
-  response: 7EE0562466E2788
+    EGOLF_PE_BMS_HV_V: 309.5
+  response: 7EE0562466E26B0
 - expected_values:
     EGOLF_PE_BMS_HV_V: 359.75
   response: 7EE0562466E2CF8

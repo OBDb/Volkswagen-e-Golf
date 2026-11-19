@@ -5,6 +5,9 @@ test_cases:
   response: 7ED05621E1C00A0
 - expected_values:
     EGOLF_HVBAT_DISCHG_I_LIM: 1
+  response: 7ED05621E1C013A
+- expected_values:
+    EGOLF_HVBAT_DISCHG_I_LIM: 1
   response: 7ED05621E1C015B
 - expected_values:
     EGOLF_HVBAT_DISCHG_I_LIM: 1
