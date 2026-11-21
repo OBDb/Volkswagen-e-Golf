@@ -2,7 +2,8 @@
     { "hdr": "710", "type": "gateway" },
     { "hdr": "714", "type": "cluster" },
     { "hdr": "715", "type": "airbag" },
-    { "hdr": "746", "type": "hvac" }
+    { "hdr": "746", "type": "hvac" },
+    { "hdr": "7E6", "type": "motor" }
   ],
   "commands": [
 { "hdr": "70E", "rax": "778", "fcm1": true, "cmd": {"22": "1945"}, "freq": 2, "dbgfilter": { "to": 2014, "years": [2016, 2017, 2018], "from": 2020 },
