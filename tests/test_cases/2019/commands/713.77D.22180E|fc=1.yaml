@@ -4,3 +4,7 @@ test_cases:
     EGOLF_BDD_ACTIVE: 0
     EGOLF_BDD_ODO: 83554
   response: 77D0762180E80014662
+- expected_values:
+    EGOLF_BDD_ACTIVE: 0
+    EGOLF_BDD_ODO: 88572
+  response: 77D0762180E800159FC
