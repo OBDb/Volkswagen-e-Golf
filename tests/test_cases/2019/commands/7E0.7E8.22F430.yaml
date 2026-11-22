@@ -10,5 +10,8 @@ test_cases:
     EGOLF_WARM_UPS: 47
   response: 7E80462F4302F
 - expected_values:
+    EGOLF_WARM_UPS: 53
+  response: 7E80462F43035
+- expected_values:
     EGOLF_WARM_UPS: 255
   response: 7E80462F430FF

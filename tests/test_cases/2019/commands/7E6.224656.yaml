@@ -4,8 +4,8 @@ test_cases:
     EGOLF_MOTOR_PWR_PE: 0
   response: 7EE056246560000
 - expected_values:
-    EGOLF_MOTOR_PWR_PE: 7.6875
-  response: 7EE0562465601EC
+    EGOLF_MOTOR_PWR_PE: 3.78125
+  response: 7EE0562465600F2
 - expected_values:
     EGOLF_MOTOR_PWR_PE: -1.76562
   response: 7EE05624656FF8F

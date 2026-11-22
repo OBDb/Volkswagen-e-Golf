@@ -4,6 +4,9 @@ test_cases:
     EGOLF_MOTOR_I_RMS: 0.25
   response: 7EE056246650004
 - expected_values:
+    EGOLF_MOTOR_I_RMS: 16.1875
+  response: 7EE056246650103
+- expected_values:
     EGOLF_MOTOR_I_RMS: 95.5625
   response: 7EE0562466505F9
 - expected_values:
