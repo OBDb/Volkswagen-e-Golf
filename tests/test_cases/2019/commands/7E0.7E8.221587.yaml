@@ -10,8 +10,8 @@ test_cases:
     EGOLF_DCDC_HV_V: 320
   response: '7E8056215872800'
 - expected_values:
-    EGOLF_DCDC_HV_V: 354.5
-  response: 7E8056215872C50
+    EGOLF_DCDC_HV_V: 353
+  response: 7E8056215872C20
 - expected_values:
     EGOLF_DCDC_HV_V: 360.25
   response: 7E8056215872D08

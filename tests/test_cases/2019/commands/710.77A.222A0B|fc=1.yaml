@@ -13,6 +13,9 @@ test_cases:
     EGOLF_BAT_T: 18
   response: 77A04622A0B3A
 - expected_values:
+    EGOLF_BAT_T: 19
+  response: 77A04622A0B3B
+- expected_values:
     EGOLF_BAT_T: 33
   response: 77A04622A0B49
 - expected_values:

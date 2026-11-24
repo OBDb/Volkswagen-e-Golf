@@ -1,8 +1,8 @@
 command_id: 7E6.224662
 test_cases:
 - expected_values:
-    EGOLF_PE_IGBT_W_T: 31.57812
-  response: 7EE0562466207E5
+    EGOLF_PE_IGBT_W_T: 26.23438
+  response: 7EE05624662068F
 - expected_values:
     EGOLF_PE_IGBT_W_T: 32.125
   response: 7EE056246620808

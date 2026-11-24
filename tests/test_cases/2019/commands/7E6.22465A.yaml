@@ -4,5 +4,5 @@ test_cases:
     EGOLF_PE_IGBT_SUPPLY_V: 29.79102
   response: 7EE0562465A3B95
 - expected_values:
-    EGOLF_PE_IGBT_SUPPLY_V: 29.82227
-  response: 7EE0562465A3BA5
+    EGOLF_PE_IGBT_SUPPLY_V: 29.83008
+  response: 7EE0562465A3BA9
