@@ -4,11 +4,11 @@ test_cases:
     EGOLF_HVBAT_T_MIN_NO: 7
   response: 7ED07621E0F03400007
 - expected_values:
+    EGOLF_HVBAT_T_MIN_NO: 21
+  response: 7ED07621E0F04000015
+- expected_values:
     EGOLF_HVBAT_T_MIN_NO: 26
   response: 7ED07621E0F06C0001A
-- expected_values:
-    EGOLF_HVBAT_T_MIN_NO: 14
-  response: 7ED07621E0F0700000E
 - expected_values:
     EGOLF_HVBAT_T_MIN_NO: 14
   response: 7ED07621E0F07E0000E
