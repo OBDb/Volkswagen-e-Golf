@@ -5,7 +5,7 @@ test_cases:
   response: 7B006622622001900
 - expected_values:
     EGOLF_CLIMATE_FR_L_T_FLP_ACT_VALUE: 100
-  response: 7B00662262200EAC8
+  response: 7B00662262200E8C8
 - expected_values:
     EGOLF_CLIMATE_FR_L_T_FLP_ACT_VALUE: 100
   response: 7B00662262200EBC8

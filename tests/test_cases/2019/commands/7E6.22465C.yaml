@@ -4,8 +4,8 @@ test_cases:
     EGOLF_PE_DCDC_KL30_V: 12.22461
   response: 7EE0562465C1873
 - expected_values:
-    EGOLF_PE_DCDC_KL30_V: 12.45312
-  response: 7EE0562465C18E8
+    EGOLF_PE_DCDC_KL30_V: 13.49805
+  response: 7EE0562465C1AFF
 - expected_values:
     EGOLF_PE_DCDC_KL30_V: 13.50391
   response: 7EE0562465C1B02

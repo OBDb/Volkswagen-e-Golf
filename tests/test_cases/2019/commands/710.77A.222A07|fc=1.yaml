@@ -10,5 +10,5 @@ test_cases:
     EGOLF_BAT_V_2A07: 13.467
   response: 77A05622A0724FB
 - expected_values:
-    EGOLF_BAT_V_2A07: 14.86
-  response: 77A05622A072A6C
+    EGOLF_BAT_V_2A07: 14.774
+  response: 77A05622A072A16
