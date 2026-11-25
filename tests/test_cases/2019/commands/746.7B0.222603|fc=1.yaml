@@ -21,3 +21,6 @@ test_cases:
 - expected_values:
     EGOLF_CLIMATE_A_C_COMP_SPD: 1400
   response: 7B0046226030E
+- expected_values:
+    EGOLF_CLIMATE_A_C_COMP_SPD: 2300
+  response: 7B00462260317

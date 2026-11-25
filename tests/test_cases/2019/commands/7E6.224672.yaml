@@ -1,8 +1,8 @@
 command_id: 7E6.224672
 test_cases:
 - expected_values:
-    EGOLF_MOTOR_STATOR_T: 31.67188
-  response: 7EE0562467207EB
+    EGOLF_MOTOR_STATOR_T: 25.39062
+  response: 7EE056246720659
 - expected_values:
     EGOLF_MOTOR_STATOR_T: 31.98438
   response: 7EE0562467207FF

@@ -1,8 +1,8 @@
 command_id: 7E6.223E94
 test_cases:
 - expected_values:
-    EGOLF_MOTOR_T: 31.6875
-  response: 7EE05623E9407EC
+    EGOLF_MOTOR_T: 25.32812
+  response: 7EE05623E940655
 - expected_values:
     EGOLF_MOTOR_T: 35.96875
   response: 7EE05623E9408FE
