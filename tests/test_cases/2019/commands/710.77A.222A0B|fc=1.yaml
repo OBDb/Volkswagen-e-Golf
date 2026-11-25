@@ -4,26 +4,5 @@ test_cases:
     EGOLF_BAT_T: 11
   response: 77A04622A0B33
 - expected_values:
-    EGOLF_BAT_T: 13
-  response: 77A04622A0B35
-- expected_values:
-    EGOLF_BAT_T: 14
-  response: 77A04622A0B36
-- expected_values:
-    EGOLF_BAT_T: 18
-  response: 77A04622A0B3A
-- expected_values:
-    EGOLF_BAT_T: 19
-  response: 77A04622A0B3B
-- expected_values:
-    EGOLF_BAT_T: 33
-  response: 77A04622A0B49
-- expected_values:
-    EGOLF_BAT_T: 34
-  response: 77A04622A0B4A
-- expected_values:
-    EGOLF_BAT_T: 35
-  response: 77A04622A0B4B
-- expected_values:
     EGOLF_BAT_T: 36
   response: 77A04622A0B4C

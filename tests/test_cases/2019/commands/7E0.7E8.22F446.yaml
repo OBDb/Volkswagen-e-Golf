@@ -4,6 +4,12 @@ test_cases:
     EGOLF_AAT: 11
   response: 7E80462F44633
 - expected_values:
+    EGOLF_AAT: 16
+  response: 7E80462F44638
+- expected_values:
+    EGOLF_AAT: 19
+  response: 7E80462F4463B
+- expected_values:
     EGOLF_AAT: 21
   response: 7E80462F4463D
 - expected_values:

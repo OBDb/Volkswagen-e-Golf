@@ -7,8 +7,8 @@ test_cases:
     EGOLF_PE_LINK_V: 320.0625
   response: 7EE05623E932802
 - expected_values:
-    EGOLF_PE_LINK_V: 359.90625
-  response: 7EE05623E932CFD
+    EGOLF_PE_LINK_V: 351.90625
+  response: 7EE05623E932BFD
 - expected_values:
     EGOLF_PE_LINK_V: 360.1875
   response: 7EE05623E932D06
